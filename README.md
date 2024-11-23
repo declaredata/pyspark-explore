@@ -6,7 +6,7 @@ Analyzes PySpark API usage in Python projects to identify which PySpark function
 
 ```bash
 # Clone and install
-git clone https://github.com/your-username/pyspark-explore
+git clone https://github.com/declaredata/pyspark-explore.git
 cd pyspark-explore
 pip3 install -r requirements.txt
 
