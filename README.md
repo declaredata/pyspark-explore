@@ -1,2 +1,79 @@
-# pyspark-explore
-surface all pyspark api functions used for a given project
+# PySpark API Usage Analyzer
+
+Analyzes PySpark API usage in Python projects to identify which PySpark functions and methods are used across your codebase. The DeclareData Fuse team uses this tool to understand the PySpark functions used in our codebase and identify the most commonly used functions.
+
+## Setup and Usage
+
+```bash
+# Clone and install
+git clone https://github.com/your-username/pyspark-explore
+cd pyspark-explore
+pip3 install -r requirements.txt
+
+# Generate PySpark latest api functions available list
+python3 generate_pyspark_api_functions.py
+
+# Analyze your PySpark api functions usage
+python3 find_pyspark_api_usage.py \
+    -d /path/to/pyspark/code/project \
+    -f pyspark_api_metadata/pyspark_functions_latest.json \
+    -o pyspark_api_usage
+```
+
+## Command Arguments
+
+```bash
+python3 find_pyspark_api_usage.py -h
+  -d DIRECTORY, --directory DIRECTORY
+                        Project directory to analyze
+  -f FUNCTIONS_FILE, --functions-file FUNCTIONS_FILE
+                        PySpark functions file (.json or .txt)
+  -o OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        Output directory (default: pyspark_api_usage)
+  -w WORKERS, --workers WORKERS
+                        Number of parallel workers (default: 4)
+```
+
+## Output Files and Summary
+### to be sent to DeclareData Fuse team
+
+The tool generates two files in your specified output directory:
+
+1. `pyspark_usage_report.json`: Detailed analysis with function locations
+```json
+{
+  "total_files_analyzed": 42,
+  "total_matches": 156,
+  "matches": [
+    {
+      "function": "collect",
+      "file": "src/processor.py",
+      "line": 25,
+      "column": 8,
+      "context": "    # Get all results\n    results = df.collect()\n    process_results(results)"
+    }
+  ]
+}
+```
+
+2. `pyspark_usage_summary.txt`: Simple summary of usage
+```text
+Total files analyzed: 42
+Total PySpark function matches: 156
+
+Functions used:
+collect: 15 occurrences
+filter: 23 occurrences
+groupBy: 12 occurrences
+```
+
+## Issues
+
+If you see `json.decoder.JSONDecodeError`, ensure you're using the correct file:
+```bash
+# Try using the text file instead
+python find_pyspark_api_usage.py \
+    -d /path/to/pyspark/code/project \
+    -f pyspark_api_metadata/pyspark_functions_latest.txt \
+    -o pyspark_api_usage
+```
