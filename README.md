@@ -55,41 +55,43 @@ The tool generates two files in your specified output directory:
 
 1. `pyspark_usage_report.json`: Detailed analysis with function locations
 ```json
-{
-  "total_files_analyzed": 42,
-  "total_matches": 156,
-  "matches": [
     {
-      "function": "collect",
-      "file": "src/processor.py",
-      "line": 25,
-      "column": 8,
-      "context": "    # Get all results\n    results = df.collect()\n    process_results(results)"
+      "function": "sum",
+      "module": "pyspark.sql.functions",
+      "file": "../utils/fuse_bench/src/fuse_bench/sorts.py",
+      "line": 76,
+      "column": 18,
+      "context": "aliased_col = F.sum(<redacted>).alias(<redacted>)",
+      "args": [
+        "str"
+      ]
+    },
+    {
+      "function": "agg",
+      "module": "pyspark.sql.dataframe",
+      "file": "../utils/fuse_bench/src/fuse_bench/sorts.py",
+      "line": 77,
+      "column": 20,
+      "context": "ordered_group = grouped.agg(<redacted>).sort(<redacted>)",
+      "args": [
+        "aliased_col"
+      ]
     }
-  ]
-}
 ```
 
 2. `pyspark_usage_summary.txt`: Simple summary of usage
 ```text
-Total files analyzed: 42
-Total PySpark function matches: 156
+Total files analyzed: 8
+Total PySpark function matches: 43
 
 Functions used:
-collect: 15 occurrences
-filter: 23 occurrences
-groupBy: 12 occurrences
-```
-
-## Issues
-
-If you see `json.decoder.JSONDecodeError`, ensure you're using the correct file:
-```bash
-# Try using the text file instead
-python find_pyspark_api_usage.py \
-    -d /path/to/pyspark/code/project \
-    -f pyspark_api_metadata/pyspark_functions_latest.txt \
-    -o pyspark_api_usage
+pyspark.sql.column.over: 1 occurrences
+pyspark.sql.dataframe.agg: 3 occurrences
+pyspark.sql.dataframe.alias: 3 occurrences
+pyspark.sql.dataframe.groupBy: 3 occurrences
+pyspark.sql.dataframe.limit: 1 occurrences
+pyspark.sql.dataframe.orderBy: 2 occurrences
+pyspark.sql.dataframe.sort: 1 occurrences
 ```
 
 ## Contact
