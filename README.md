@@ -1,8 +1,8 @@
 # PySpark API Usage Analyzer
 
-Analyzes PySpark API usage in Python projects to identify which PySpark functions and methods are used across your codebase. The DeclareData Fuse team uses this tool to understand the PySpark functions used in our codebase and identify the most commonly used functions.
+Analyzes PySpark API usage in projects to identify which PySpark functions and methods are being actively used across your Spark codebase. The DeclareData Fuse team uses this tool to understand the PySpark functions used in our codebase and identify the most commonly used functions.
 
-Note: Results are specific to your project and are automatically gitignored. They are not to be committed to the repository.
+Note: Results are specific to your project and are automatically gitignored. They are not to be committed to the repository. The should only be shared with the DeclareData Fuse team.
 
 ## Setup and Usage
 
