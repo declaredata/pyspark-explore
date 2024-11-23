@@ -7,15 +7,24 @@ Note: Results are specific to your project and are automatically gitignored. The
 ## Setup and Usage
 
 ```bash
-# Clone and install
 git clone https://github.com/declaredata/pyspark-explore.git
 cd pyspark-explore
 pip3 install -r requirements.txt
+```
 
-# Generate PySpark latest api functions available list
+```bash
+# generate PySpark latest api functions available list
+# this will generate a .json and text file with all the functions
+# this is not required if you already have the latest functions list from the repository
 python3 generate_pyspark_api_functions.py
+```
 
-# Analyze your PySpark api functions usage
+```bash
+# analyze your PySpark api functions usage
+# -d: project directory to analyze
+# -f: PySpark functions file (.json or .txt) from the previous step
+# -o: output directory (default: pyspark_api_usage)
+# this will generate a report and summary in the output directory to be sent to the DeclareData Fuse team
 python3 find_pyspark_api_usage.py \
     -d /path/to/pyspark/code/project \
     -f pyspark_api_metadata/pyspark_functions_latest.json \
