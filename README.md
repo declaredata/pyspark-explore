@@ -15,9 +15,8 @@ pip3 install -r requirements.txt
 ```bash
 # analyze your PySpark code for api functions usage
 # -d: project directory to analyze
-# -f: PySpark functions file (.json or .txt) from the previous step
+# -f: PySpark functions file (.json or .txt) already generated or can be generated using the optional script below
 # -o: output directory (default: pyspark_api_usage)
-# this will generate a report and summary in the output directory to be sent to the DeclareData Fuse team
 python3 find_pyspark_api_usage.py \
     -d /path/to/pyspark/code/project \
     -f pyspark_api_metadata/pyspark_functions_latest.json \
