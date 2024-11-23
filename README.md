@@ -2,7 +2,7 @@
 
 Analyzes PySpark API usage in projects to identify which PySpark functions and methods are being actively used across your Spark codebase. The DeclareData Fuse team uses this tool to understand the PySpark functions used in our codebase and identify the most commonly used functions.
 
-Note: Results are specific to your project and are automatically gitignored. They are not to be committed to the repository. The should only be shared with the DeclareData Fuse team.
+Note: Results are specific to your project and are gitignored. They are not to be committed to the repository and should be sent to the DeclareData Fuse team for review.
 
 ## Setup and Usage
 
@@ -45,8 +45,8 @@ python3 find_pyspark_api_usage.py -h
                         Number of parallel workers (default: 4)
 ```
 
-## Output Files and Summary
-### to be sent to DeclareData Fuse team
+## Output and Summary Files
+#### The two output files should be sent to the DeclareData Fuse team for review.
 
 The tool generates two files in your specified output directory:
 
@@ -88,3 +88,7 @@ python find_pyspark_api_usage.py \
     -f pyspark_api_metadata/pyspark_functions_latest.txt \
     -o pyspark_api_usage
 ```
+
+## Contact
+
+[DeclareData](https://declaredata.com/)
