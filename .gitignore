@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+
+pyspark_api_metadata/
+pyspark_api_usage/
+
+venv/
