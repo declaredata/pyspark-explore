@@ -1,2110 +1,4267 @@
 {
-  "timestamp": "2024-11-22T23:16:53.358527",
+  "timestamp": "2024-11-23T13:17:01.602777",
   "pyspark_version": "3.5.3",
-  "function_count": 2103,
+  "function_count": 1065,
   "functions": [
-    "NamedTemporaryFile",
-    "NamedTuple",
-    "None.fromhex",
-    "None.fromkeys",
-    "RLock",
-    "_functools.reduce",
-    "_pickle.load",
-    "_pickle.loads",
-    "_warnings.warn",
-    "abc.abstractmethod",
-    "abs",
-    "abstractmethod",
-    "accumulator",
-    "acos",
-    "acosh",
-    "active",
-    "add",
-    "addArchive",
-    "addArtifact",
-    "addArtifacts",
-    "addFile",
-    "addInPlace",
-    "addJobTag",
-    "addListener",
-    "addPyFile",
-    "addTag",
-    "add_function",
-    "add_months",
-    "add_profiler",
-    "aes_decrypt",
-    "aes_encrypt",
-    "agg",
-    "aggregate",
-    "aggregateByKey",
-    "alias",
-    "allGather",
-    "any_value",
-    "appName",
-    "append",
-    "apply",
-    "applyInPandas",
-    "applyInPandasWithState",
-    "approxCountDistinct",
-    "approxQuantile",
-    "approx_count_distinct",
-    "approx_percentile",
-    "array",
-    "array_agg",
-    "array_append",
-    "array_compact",
-    "array_contains",
-    "array_distinct",
-    "array_except",
-    "array_insert",
-    "array_intersect",
-    "array_join",
-    "array_max",
-    "array_min",
-    "array_position",
-    "array_prepend",
-    "array_remove",
-    "array_repeat",
-    "array_size",
-    "array_sort",
-    "array_union",
-    "arrays_overlap",
-    "arrays_zip",
-    "arrow_to_pandas",
-    "asDeterministic",
-    "asDict",
-    "asNondeterministic",
-    "asc",
-    "asc_nulls_first",
-    "asc_nulls_last",
-    "ascii",
-    "asin",
-    "asinh",
-    "assert_true",
-    "astype",
-    "atan",
-    "atan2",
-    "atanh",
-    "attemptNumber",
-    "avg",
-    "awaitAnyTermination",
-    "awaitTermination",
-    "barrier",
-    "base64",
-    "between",
-    "bin",
-    "binaryFiles",
-    "binaryRecords",
-    "bit_and",
-    "bit_count",
-    "bit_get",
-    "bit_length",
-    "bit_or",
-    "bit_xor",
-    "bitmap_bit_position",
-    "bitmap_bucket_number",
-    "bitmap_construct_agg",
-    "bitmap_count",
-    "bitmap_or_agg",
-    "bitwiseAND",
-    "bitwiseNOT",
-    "bitwiseOR",
-    "bitwiseXOR",
-    "bitwise_not",
-    "bool_and",
-    "bool_or",
-    "broadcast",
-    "bround",
-    "btrim",
-    "bucket",
-    "bucketBy",
-    "cache",
-    "cacheTable",
-    "call",
-    "call_function",
-    "call_udf",
-    "can_convert",
-    "cancelAllJobs",
-    "cancelJobGroup",
-    "cancelJobsWithTag",
-    "capture_sql_exception",
-    "cardinality",
-    "cartesian",
-    "cast",
-    "cbrt",
-    "ceil",
-    "ceiling",
-    "cell_set",
-    "char",
-    "char_length",
-    "character_length",
-    "check_iterator_annotation",
-    "check_tuple_annotation",
-    "check_union_annotation",
-    "check_unused_args",
-    "checkpoint",
-    "choose_backend",
-    "cleanShuffleDependencies",
-    "clear",
-    "clearCache",
-    "clearExecutorResourceRequests",
-    "clearJobTags",
-    "clearTags",
-    "clearTaskResourceRequests",
-    "close",
-    "close_request",
-    "coalesce",
-    "cogroup",
-    "col",
-    "colRegex",
-    "collect",
-    "collectAsMap",
-    "collectWithJobGroup",
-    "collect_list",
-    "collect_set",
-    "collections.namedtuple",
-    "column",
-    "combineByKey",
-    "concat",
-    "concat_ws",
-    "config",
-    "contains",
-    "contextlib.contextmanager",
-    "contextmanager",
-    "conv",
-    "convert",
-    "convert_exception",
-    "convert_field",
-    "convert_timezone",
-    "copy",
-    "copyFromLocalToFs",
-    "copy_func",
-    "cores",
-    "corr",
-    "cos",
-    "cosh",
-    "cot",
-    "count",
-    "countApprox",
-    "countApproxDistinct",
-    "countByKey",
-    "countByValue",
-    "countDistinct",
-    "count_distinct",
-    "count_if",
-    "count_min_sketch",
-    "cov",
-    "covar_pop",
-    "covar_samp",
-    "cpus",
-    "crc32",
-    "create",
-    "createDataFrame",
-    "createExternalTable",
-    "createGlobalTempView",
-    "createOrReplace",
-    "createOrReplaceGlobalTempView",
-    "createOrReplaceTempView",
-    "createTable",
-    "createTempView",
-    "create_map",
-    "crossJoin",
-    "crosstab",
-    "csc",
-    "csv",
-    "cube",
-    "cume_dist",
-    "curdate",
-    "currentCatalog",
-    "currentDatabase",
-    "current_catalog",
-    "current_database",
-    "current_date",
-    "current_schema",
-    "current_timestamp",
-    "current_timezone",
-    "current_user",
-    "databaseExists",
-    "date_add",
-    "date_diff",
-    "date_format",
-    "date_from_unix_date",
-    "date_part",
-    "date_sub",
-    "date_trunc",
-    "dateadd",
-    "datediff",
-    "datepart",
-    "day",
-    "dayofmonth",
-    "dayofweek",
-    "dayofyear",
-    "days",
-    "decode",
-    "degrees",
-    "dense_rank",
-    "desc",
-    "desc_nulls_first",
-    "desc_nulls_last",
-    "describe",
-    "deserialize",
-    "destroy",
-    "df_varargs_api",
-    "dfapi",
-    "disable",
-    "disable_by_count",
-    "distinct",
-    "drop",
-    "dropDuplicates",
-    "dropDuplicatesWithinWatermark",
-    "dropFields",
-    "dropGlobalTempView",
-    "dropTempTable",
-    "dropTempView",
-    "drop_duplicates",
-    "dropna",
-    "dump",
-    "dump_profiles",
-    "dump_stream",
-    "dumps",
-    "dynamic_subimport",
-    "e",
-    "element_at",
-    "elt",
-    "emptyRDD",
-    "enable",
-    "enableHiveSupport",
-    "enable_by_count",
-    "encode",
-    "endswith",
-    "ensure_callback_server_started",
-    "eqNullSafe",
-    "equal_null",
-    "every",
-    "exceptAll",
-    "exception",
-    "exists",
-    "exp",
-    "explain",
-    "explode",
-    "explode_outer",
-    "expm1",
-    "expr",
-    "extract",
-    "factorial",
-    "fail_on_stopiteration",
-    "fieldNames",
-    "fileno",
-    "fill",
-    "fillna",
-    "filter",
-    "filterwarnings",
-    "find_in_set",
-    "finish_request",
-    "first",
-    "first_spark_call",
-    "first_value",
-    "flatMap",
-    "flatMapValues",
-    "flatten",
-    "flattened_serializer",
-    "floor",
-    "fold",
-    "foldByKey",
-    "forall",
-    "foreach",
-    "foreachBatch",
-    "foreachPartition",
-    "format",
-    "format_field",
-    "format_number",
-    "format_string",
-    "freqItems",
-    "fromInternal",
-    "fromJObject",
-    "fromJson",
-    "from_arrow_schema",
-    "from_arrow_type",
-    "from_csv",
-    "from_json",
-    "from_unixtime",
-    "from_utc_timestamp",
-    "fromhex",
-    "fromkeys",
-    "fullOuterJoin",
-    "func",
-    "functionExists",
-    "functools.wraps",
-    "get",
-    "getActiveJobsIds",
-    "getActiveSession",
-    "getActiveStageIds",
-    "getAll",
-    "getCheckpointDir",
-    "getCheckpointFile",
-    "getConf",
-    "getCurrentProcessingTimeMs",
-    "getCurrentWatermarkMs",
-    "getDatabase",
-    "getErrorClass",
-    "getField",
-    "getFunction",
-    "getItem",
-    "getJobIdsForGroup",
-    "getJobInfo",
-    "getJobTags",
-    "getLocalProperty",
-    "getMessageParameters",
-    "getName",
-    "getNumPartitions",
-    "getOrCreate",
-    "getPoissonSample",
-    "getResourceProfile",
-    "getRootDirectory",
-    "getSqlState",
-    "getStageInfo",
-    "getStorageLevel",
-    "getTable",
-    "getTags",
-    "getTaskInfos",
-    "getUniformSample",
-    "get_active_spark_context",
-    "get_column_class",
-    "get_dataframe_class",
-    "get_error_message",
-    "get_field",
-    "get_json_object",
-    "get_message_template",
-    "get_request",
-    "get_type_hints",
-    "get_used_memory",
-    "get_value",
-    "get_window_class",
-    "getbit",
-    "getfullargspec",
-    "glom",
-    "greatest",
-    "groupBy",
-    "groupByKey",
-    "groupWith",
-    "groupby",
-    "grouping",
-    "grouping_id",
-    "hadoopFile",
-    "hadoopRDD",
-    "handle_error",
-    "handle_request",
-    "handle_timeout",
-    "hash",
-    "head",
-    "hex",
-    "hint",
-    "histogram",
-    "histogram_numeric",
-    "hll_sketch_agg",
-    "hll_sketch_estimate",
-    "hll_union",
-    "hll_union_agg",
-    "hour",
-    "hours",
-    "hypot",
-    "id",
-    "ifnull",
-    "ilike",
-    "infer_eval_type",
-    "inheritable_thread_target",
-    "initRandomGenerator",
-    "initcap",
-    "inline",
-    "inline_outer",
-    "inputFiles",
-    "input_file_block_length",
-    "input_file_block_start",
-    "input_file_name",
-    "insertInto",
-    "inspect.getfullargspec",
-    "inspect.signature",
-    "install_exception_handler",
-    "instance",
-    "instr",
-    "interruptAll",
-    "interruptOperation",
-    "interruptTag",
-    "intersect",
-    "intersectAll",
-    "intersection",
-    "isCached",
-    "isCheckpointed",
-    "isDaemon",
-    "isEmpty",
-    "isLocal",
-    "isLocallyCheckpointed",
-    "isModifiable",
-    "isNotNull",
-    "isNull",
-    "is_alive",
-    "is_instance_of",
-    "is_remote",
-    "is_timestamp_ntz_preferred",
-    "is_tornado_coroutine",
-    "isin",
-    "isinf",
-    "isnan",
-    "isnotnull",
-    "isnull",
-    "items",
-    "java_import",
-    "java_method",
-    "jdbc",
-    "join",
-    "json",
-    "jsonValue",
-    "json_array_length",
-    "json_object_keys",
-    "json_tuple",
-    "keyBy",
-    "keys",
-    "keyword_only",
-    "kurtosis",
-    "lag",
-    "last",
-    "last_day",
-    "last_value",
-    "launch_gateway",
-    "lcase",
-    "lead",
-    "least",
-    "left",
-    "leftOuterJoin",
-    "length",
-    "levenshtein",
-    "like",
-    "limit",
-    "listCatalogs",
-    "listColumns",
-    "listDatabases",
-    "listFunctions",
-    "listTables",
-    "list_registry_pickle_by_value",
-    "lit",
-    "ln",
-    "load",
-    "load_from_path",
-    "load_stream",
-    "loads",
-    "localCheckpoint",
-    "local_connect_and_auth",
-    "localtimestamp",
-    "locate",
-    "log",
-    "log10",
-    "log1p",
-    "log2",
-    "lookup",
-    "lower",
-    "lpad",
-    "ltrim",
-    "majorMinorVersion",
-    "make_date",
-    "make_dt_interval",
-    "make_interval",
-    "make_timestamp",
-    "make_timestamp_ltz",
-    "make_timestamp_ntz",
-    "make_ym_interval",
-    "map",
-    "mapInArrow",
-    "mapInPandas",
-    "mapPartitions",
-    "mapPartitionsWithIndex",
-    "mapPartitionsWithSplit",
-    "mapValues",
-    "map_concat",
-    "map_contains_key",
-    "map_entries",
-    "map_filter",
-    "map_from_arrays",
-    "map_from_entries",
-    "map_keys",
-    "map_values",
-    "map_zip_with",
-    "mask",
-    "master",
-    "math.ceil",
-    "math.isinf",
-    "math.isnan",
-    "math.log",
-    "math.pow",
-    "math.sqrt",
-    "max",
-    "max_by",
-    "md5",
-    "mean",
-    "meanApprox",
-    "median",
-    "melt",
-    "memory",
-    "memoryOverhead",
-    "memory_profiler.choose_backend",
-    "memory_profiler.disable",
-    "memory_profiler.disable_by_count",
-    "memory_profiler.enable",
-    "memory_profiler.enable_by_count",
-    "memory_profiler.items",
-    "memory_profiler.runctx",
-    "memory_profiler.trace",
-    "memory_profiler.trace_max_mem",
-    "memory_profiler.trace_memory_usage",
-    "memory_profiler.wrap_function",
-    "merge",
-    "mergeCombiners",
-    "mergeStats",
-    "mergeValues",
-    "min",
-    "min_by",
-    "minute",
-    "mode",
-    "module",
-    "monotonically_increasing_id",
-    "month",
-    "months",
-    "months_between",
-    "name",
-    "named_struct",
-    "namedtuple",
-    "nanvl",
-    "needConversion",
-    "negate",
-    "negative",
-    "newAPIHadoopFile",
-    "newAPIHadoopRDD",
-    "newSession",
-    "new_memory_profiler",
-    "new_profiler",
-    "new_udf_profiler",
-    "next_day",
-    "no_type_check",
-    "now",
-    "nth_value",
-    "ntile",
-    "nullif",
-    "nvl",
-    "nvl2",
-    "observe",
-    "octet_length",
-    "offheapMemory",
-    "offset",
-    "onQueryIdle",
-    "onQueryProgress",
-    "onQueryStarted",
-    "onQueryTerminated",
-    "option",
-    "options",
-    "orc",
-    "orderBy",
-    "otherwise",
-    "outputMode",
-    "over",
-    "overlay",
-    "overload",
-    "overwrite",
-    "overwritePartitions",
-    "pack_long",
-    "pandas_api",
-    "pandas_udf",
-    "parallelize",
-    "parametrized_type_hint_getinitargs",
-    "parquet",
-    "parse",
-    "parse_url",
-    "partitionBy",
-    "partitionId",
-    "partitionedBy",
-    "percent_rank",
-    "percentile",
-    "percentile_approx",
-    "persist",
-    "pi",
-    "pickleFile",
-    "pipe",
-    "pivot",
-    "pmod",
-    "portable_hash",
-    "posexplode",
-    "posexplode_outer",
-    "position",
-    "positive",
-    "pow",
-    "power",
-    "printSchema",
-    "print_exec",
-    "printf",
-    "processAllAvailable",
-    "process_request",
-    "product",
-    "profile",
-    "py4j.java_gateway.is_instance_of",
-    "py4j.java_gateway.java_import",
-    "py4j.protocol.register_input_converter",
-    "pyarrow_version_less_than_minimum",
-    "pyspark.accumulators.add",
-    "pyspark.accumulators.addInPlace",
-    "pyspark.accumulators.shutdown",
-    "pyspark.accumulators.zero",
-    "pyspark.broadcast.add",
-    "pyspark.broadcast.clear",
-    "pyspark.broadcast.destroy",
-    "pyspark.broadcast.dump",
-    "pyspark.broadcast.load",
-    "pyspark.broadcast.load_from_path",
-    "pyspark.broadcast.unpersist",
-    "pyspark.cloudpickle.cloudpickle.cell_set",
-    "pyspark.cloudpickle.cloudpickle.dynamic_subimport",
-    "pyspark.cloudpickle.cloudpickle.instance",
-    "pyspark.cloudpickle.cloudpickle.is_tornado_coroutine",
-    "pyspark.cloudpickle.cloudpickle.list_registry_pickle_by_value",
-    "pyspark.cloudpickle.cloudpickle.parametrized_type_hint_getinitargs",
-    "pyspark.cloudpickle.cloudpickle.register_pickle_by_value",
-    "pyspark.cloudpickle.cloudpickle.subimport",
-    "pyspark.cloudpickle.cloudpickle.unregister_pickle_by_value",
-    "pyspark.cloudpickle.cloudpickle_fast.dump",
-    "pyspark.cloudpickle.cloudpickle_fast.dumps",
-    "pyspark.cloudpickle.cloudpickle_fast.reducer_override",
-    "pyspark.conf.contains",
-    "pyspark.conf.get",
-    "pyspark.conf.getAll",
-    "pyspark.conf.set",
-    "pyspark.conf.setAll",
-    "pyspark.conf.setAppName",
-    "pyspark.conf.setExecutorEnv",
-    "pyspark.conf.setIfMissing",
-    "pyspark.conf.setMaster",
-    "pyspark.conf.setSparkHome",
-    "pyspark.conf.toDebugString",
-    "pyspark.context.accumulator",
-    "pyspark.context.addArchive",
-    "pyspark.context.addFile",
-    "pyspark.context.addJobTag",
-    "pyspark.context.addPyFile",
-    "pyspark.context.binaryFiles",
-    "pyspark.context.binaryRecords",
-    "pyspark.context.broadcast",
-    "pyspark.context.cancelAllJobs",
-    "pyspark.context.cancelJobGroup",
-    "pyspark.context.cancelJobsWithTag",
-    "pyspark.context.clearJobTags",
-    "pyspark.context.dump_profiles",
-    "pyspark.context.emptyRDD",
-    "pyspark.context.getCheckpointDir",
-    "pyspark.context.getConf",
-    "pyspark.context.getJobTags",
-    "pyspark.context.getLocalProperty",
-    "pyspark.context.getOrCreate",
-    "pyspark.context.hadoopFile",
-    "pyspark.context.hadoopRDD",
-    "pyspark.context.newAPIHadoopFile",
-    "pyspark.context.newAPIHadoopRDD",
-    "pyspark.context.parallelize",
-    "pyspark.context.pickleFile",
-    "pyspark.context.range",
-    "pyspark.context.removeJobTag",
-    "pyspark.context.runJob",
-    "pyspark.context.sequenceFile",
-    "pyspark.context.setCheckpointDir",
-    "pyspark.context.setInterruptOnCancel",
-    "pyspark.context.setJobDescription",
-    "pyspark.context.setJobGroup",
-    "pyspark.context.setLocalProperty",
-    "pyspark.context.setLogLevel",
-    "pyspark.context.setSystemProperty",
-    "pyspark.context.show_profiles",
-    "pyspark.context.sparkUser",
-    "pyspark.context.statusTracker",
-    "pyspark.context.stop",
-    "pyspark.context.textFile",
-    "pyspark.context.union",
-    "pyspark.context.wholeTextFiles",
-    "pyspark.copy_func",
-    "pyspark.errors.exceptions.base.getErrorClass",
-    "pyspark.errors.exceptions.base.getMessageParameters",
-    "pyspark.errors.exceptions.base.getSqlState",
-    "pyspark.errors.exceptions.captured.capture_sql_exception",
-    "pyspark.errors.exceptions.captured.convert_exception",
-    "pyspark.errors.exceptions.captured.getErrorClass",
-    "pyspark.errors.exceptions.captured.getMessageParameters",
-    "pyspark.errors.exceptions.captured.getSqlState",
-    "pyspark.errors.exceptions.captured.install_exception_handler",
-    "pyspark.errors.exceptions.captured.unwrap_spark_exception",
-    "pyspark.errors.utils.get_error_message",
-    "pyspark.errors.utils.get_message_template",
-    "pyspark.files.get",
-    "pyspark.files.getRootDirectory",
-    "pyspark.java_gateway.ensure_callback_server_started",
-    "pyspark.java_gateway.launch_gateway",
-    "pyspark.java_gateway.local_connect_and_auth",
-    "pyspark.join.python_cogroup",
-    "pyspark.join.python_full_outer_join",
-    "pyspark.join.python_join",
-    "pyspark.join.python_left_outer_join",
-    "pyspark.join.python_right_outer_join",
-    "pyspark.keyword_only",
-    "pyspark.profiler.add",
-    "pyspark.profiler.addInPlace",
-    "pyspark.profiler.add_function",
-    "pyspark.profiler.add_profiler",
-    "pyspark.profiler.dump",
-    "pyspark.profiler.dump_profiles",
-    "pyspark.profiler.new_memory_profiler",
-    "pyspark.profiler.new_profiler",
-    "pyspark.profiler.new_udf_profiler",
-    "pyspark.profiler.profile",
-    "pyspark.profiler.show",
-    "pyspark.profiler.show_profiles",
-    "pyspark.profiler.stats",
-    "pyspark.profiler.zero",
-    "pyspark.rdd.aggregate",
-    "pyspark.rdd.aggregateByKey",
-    "pyspark.rdd.barrier",
-    "pyspark.rdd.cache",
-    "pyspark.rdd.cartesian",
-    "pyspark.rdd.checkpoint",
-    "pyspark.rdd.cleanShuffleDependencies",
-    "pyspark.rdd.coalesce",
-    "pyspark.rdd.cogroup",
-    "pyspark.rdd.collect",
-    "pyspark.rdd.collectAsMap",
-    "pyspark.rdd.collectWithJobGroup",
-    "pyspark.rdd.combineByKey",
-    "pyspark.rdd.count",
-    "pyspark.rdd.countApprox",
-    "pyspark.rdd.countApproxDistinct",
-    "pyspark.rdd.countByKey",
-    "pyspark.rdd.countByValue",
-    "pyspark.rdd.distinct",
-    "pyspark.rdd.filter",
-    "pyspark.rdd.first",
-    "pyspark.rdd.flatMap",
-    "pyspark.rdd.flatMapValues",
-    "pyspark.rdd.fold",
-    "pyspark.rdd.foldByKey",
-    "pyspark.rdd.foreach",
-    "pyspark.rdd.foreachPartition",
-    "pyspark.rdd.fullOuterJoin",
-    "pyspark.rdd.getCheckpointFile",
-    "pyspark.rdd.getNumPartitions",
-    "pyspark.rdd.getResourceProfile",
-    "pyspark.rdd.getStorageLevel",
-    "pyspark.rdd.glom",
-    "pyspark.rdd.groupBy",
-    "pyspark.rdd.groupByKey",
-    "pyspark.rdd.groupWith",
-    "pyspark.rdd.histogram",
-    "pyspark.rdd.id",
-    "pyspark.rdd.intersection",
-    "pyspark.rdd.isCheckpointed",
-    "pyspark.rdd.isEmpty",
-    "pyspark.rdd.isLocallyCheckpointed",
-    "pyspark.rdd.join",
-    "pyspark.rdd.keyBy",
-    "pyspark.rdd.keys",
-    "pyspark.rdd.leftOuterJoin",
-    "pyspark.rdd.localCheckpoint",
-    "pyspark.rdd.lookup",
-    "pyspark.rdd.map",
-    "pyspark.rdd.mapPartitions",
-    "pyspark.rdd.mapPartitionsWithIndex",
-    "pyspark.rdd.mapPartitionsWithSplit",
-    "pyspark.rdd.mapValues",
-    "pyspark.rdd.max",
-    "pyspark.rdd.mean",
-    "pyspark.rdd.meanApprox",
-    "pyspark.rdd.min",
-    "pyspark.rdd.name",
-    "pyspark.rdd.partitionBy",
-    "pyspark.rdd.persist",
-    "pyspark.rdd.pipe",
-    "pyspark.rdd.portable_hash",
-    "pyspark.rdd.randomSplit",
-    "pyspark.rdd.reduce",
-    "pyspark.rdd.reduceByKey",
-    "pyspark.rdd.reduceByKeyLocally",
-    "pyspark.rdd.repartition",
-    "pyspark.rdd.repartitionAndSortWithinPartitions",
-    "pyspark.rdd.rightOuterJoin",
-    "pyspark.rdd.sample",
-    "pyspark.rdd.sampleByKey",
-    "pyspark.rdd.sampleStdev",
-    "pyspark.rdd.sampleVariance",
-    "pyspark.rdd.saveAsHadoopDataset",
-    "pyspark.rdd.saveAsHadoopFile",
-    "pyspark.rdd.saveAsNewAPIHadoopDataset",
-    "pyspark.rdd.saveAsNewAPIHadoopFile",
-    "pyspark.rdd.saveAsPickleFile",
-    "pyspark.rdd.saveAsSequenceFile",
-    "pyspark.rdd.saveAsTextFile",
-    "pyspark.rdd.setName",
-    "pyspark.rdd.sortBy",
-    "pyspark.rdd.sortByKey",
-    "pyspark.rdd.stats",
-    "pyspark.rdd.stdev",
-    "pyspark.rdd.subtract",
-    "pyspark.rdd.subtractByKey",
-    "pyspark.rdd.sum",
-    "pyspark.rdd.sumApprox",
-    "pyspark.rdd.take",
-    "pyspark.rdd.takeOrdered",
-    "pyspark.rdd.takeSample",
-    "pyspark.rdd.toDF",
-    "pyspark.rdd.toDebugString",
-    "pyspark.rdd.toLocalIterator",
-    "pyspark.rdd.top",
-    "pyspark.rdd.treeAggregate",
-    "pyspark.rdd.treeReduce",
-    "pyspark.rdd.union",
-    "pyspark.rdd.unpersist",
-    "pyspark.rdd.values",
-    "pyspark.rdd.variance",
-    "pyspark.rdd.withResources",
-    "pyspark.rdd.zip",
-    "pyspark.rdd.zipWithIndex",
-    "pyspark.rdd.zipWithUniqueId",
-    "pyspark.rddsampler.func",
-    "pyspark.rddsampler.getPoissonSample",
-    "pyspark.rddsampler.getUniformSample",
-    "pyspark.rddsampler.initRandomGenerator",
-    "pyspark.resource.profile.clearExecutorResourceRequests",
-    "pyspark.resource.profile.clearTaskResourceRequests",
-    "pyspark.resource.profile.require",
-    "pyspark.resource.requests.cores",
-    "pyspark.resource.requests.cpus",
-    "pyspark.resource.requests.memory",
-    "pyspark.resource.requests.memoryOverhead",
-    "pyspark.resource.requests.offheapMemory",
-    "pyspark.resource.requests.pysparkMemory",
-    "pyspark.resource.requests.resource",
-    "pyspark.serializers.close",
-    "pyspark.serializers.dump_stream",
-    "pyspark.serializers.dumps",
-    "pyspark.serializers.load_stream",
-    "pyspark.serializers.loads",
-    "pyspark.serializers.pack_long",
-    "pyspark.serializers.read_bool",
-    "pyspark.serializers.read_int",
-    "pyspark.serializers.read_long",
-    "pyspark.serializers.write",
-    "pyspark.serializers.write_int",
-    "pyspark.serializers.write_long",
-    "pyspark.serializers.write_with_length",
-    "pyspark.shuffle.append",
-    "pyspark.shuffle.flattened_serializer",
-    "pyspark.shuffle.get_used_memory",
-    "pyspark.shuffle.items",
-    "pyspark.shuffle.mergeCombiners",
-    "pyspark.shuffle.mergeValues",
-    "pyspark.shuffle.sorted",
-    "pyspark.since",
-    "pyspark.sql.catalog.cacheTable",
-    "pyspark.sql.catalog.clearCache",
-    "pyspark.sql.catalog.createExternalTable",
-    "pyspark.sql.catalog.createTable",
-    "pyspark.sql.catalog.currentCatalog",
-    "pyspark.sql.catalog.currentDatabase",
-    "pyspark.sql.catalog.databaseExists",
-    "pyspark.sql.catalog.dropGlobalTempView",
-    "pyspark.sql.catalog.dropTempView",
-    "pyspark.sql.catalog.functionExists",
-    "pyspark.sql.catalog.getDatabase",
-    "pyspark.sql.catalog.getFunction",
-    "pyspark.sql.catalog.getTable",
-    "pyspark.sql.catalog.isCached",
-    "pyspark.sql.catalog.listCatalogs",
-    "pyspark.sql.catalog.listColumns",
-    "pyspark.sql.catalog.listDatabases",
-    "pyspark.sql.catalog.listFunctions",
-    "pyspark.sql.catalog.listTables",
-    "pyspark.sql.catalog.recoverPartitions",
-    "pyspark.sql.catalog.refreshByPath",
-    "pyspark.sql.catalog.refreshTable",
-    "pyspark.sql.catalog.registerFunction",
-    "pyspark.sql.catalog.setCurrentCatalog",
-    "pyspark.sql.catalog.setCurrentDatabase",
-    "pyspark.sql.catalog.tableExists",
-    "pyspark.sql.catalog.uncacheTable",
-    "pyspark.sql.column.alias",
-    "pyspark.sql.column.asc",
-    "pyspark.sql.column.asc_nulls_first",
-    "pyspark.sql.column.asc_nulls_last",
-    "pyspark.sql.column.astype",
-    "pyspark.sql.column.between",
-    "pyspark.sql.column.bitwiseAND",
-    "pyspark.sql.column.bitwiseOR",
-    "pyspark.sql.column.bitwiseXOR",
-    "pyspark.sql.column.cast",
-    "pyspark.sql.column.contains",
-    "pyspark.sql.column.desc",
-    "pyspark.sql.column.desc_nulls_first",
-    "pyspark.sql.column.desc_nulls_last",
-    "pyspark.sql.column.dropFields",
-    "pyspark.sql.column.endswith",
-    "pyspark.sql.column.eqNullSafe",
-    "pyspark.sql.column.getField",
-    "pyspark.sql.column.getItem",
-    "pyspark.sql.column.ilike",
-    "pyspark.sql.column.isNotNull",
-    "pyspark.sql.column.isNull",
-    "pyspark.sql.column.isin",
-    "pyspark.sql.column.like",
-    "pyspark.sql.column.name",
-    "pyspark.sql.column.otherwise",
-    "pyspark.sql.column.over",
-    "pyspark.sql.column.rlike",
-    "pyspark.sql.column.startswith",
-    "pyspark.sql.column.substr",
-    "pyspark.sql.column.when",
-    "pyspark.sql.column.withField",
-    "pyspark.sql.conf.get",
-    "pyspark.sql.conf.isModifiable",
-    "pyspark.sql.conf.set",
-    "pyspark.sql.conf.unset",
-    "pyspark.sql.context.cacheTable",
-    "pyspark.sql.context.clearCache",
-    "pyspark.sql.context.createDataFrame",
-    "pyspark.sql.context.createExternalTable",
-    "pyspark.sql.context.dropTempTable",
-    "pyspark.sql.context.getConf",
-    "pyspark.sql.context.getOrCreate",
-    "pyspark.sql.context.newSession",
-    "pyspark.sql.context.range",
-    "pyspark.sql.context.refreshTable",
-    "pyspark.sql.context.registerDataFrameAsTable",
-    "pyspark.sql.context.registerFunction",
-    "pyspark.sql.context.registerJavaFunction",
-    "pyspark.sql.context.setConf",
-    "pyspark.sql.context.sql",
-    "pyspark.sql.context.table",
-    "pyspark.sql.context.tableNames",
-    "pyspark.sql.context.tables",
-    "pyspark.sql.context.uncacheTable",
-    "pyspark.sql.dataframe.agg",
-    "pyspark.sql.dataframe.alias",
-    "pyspark.sql.dataframe.approxQuantile",
-    "pyspark.sql.dataframe.cache",
-    "pyspark.sql.dataframe.checkpoint",
-    "pyspark.sql.dataframe.coalesce",
-    "pyspark.sql.dataframe.colRegex",
-    "pyspark.sql.dataframe.collect",
-    "pyspark.sql.dataframe.corr",
-    "pyspark.sql.dataframe.count",
-    "pyspark.sql.dataframe.cov",
-    "pyspark.sql.dataframe.createGlobalTempView",
-    "pyspark.sql.dataframe.createOrReplaceGlobalTempView",
-    "pyspark.sql.dataframe.createOrReplaceTempView",
-    "pyspark.sql.dataframe.createTempView",
-    "pyspark.sql.dataframe.crossJoin",
-    "pyspark.sql.dataframe.crosstab",
-    "pyspark.sql.dataframe.cube",
-    "pyspark.sql.dataframe.describe",
-    "pyspark.sql.dataframe.distinct",
-    "pyspark.sql.dataframe.drop",
-    "pyspark.sql.dataframe.dropDuplicates",
-    "pyspark.sql.dataframe.dropDuplicatesWithinWatermark",
-    "pyspark.sql.dataframe.drop_duplicates",
-    "pyspark.sql.dataframe.dropna",
-    "pyspark.sql.dataframe.exceptAll",
-    "pyspark.sql.dataframe.explain",
-    "pyspark.sql.dataframe.fill",
-    "pyspark.sql.dataframe.fillna",
-    "pyspark.sql.dataframe.filter",
-    "pyspark.sql.dataframe.first",
-    "pyspark.sql.dataframe.foreach",
-    "pyspark.sql.dataframe.foreachPartition",
-    "pyspark.sql.dataframe.freqItems",
-    "pyspark.sql.dataframe.groupBy",
-    "pyspark.sql.dataframe.groupby",
-    "pyspark.sql.dataframe.head",
-    "pyspark.sql.dataframe.hint",
-    "pyspark.sql.dataframe.inputFiles",
-    "pyspark.sql.dataframe.intersect",
-    "pyspark.sql.dataframe.intersectAll",
-    "pyspark.sql.dataframe.isEmpty",
-    "pyspark.sql.dataframe.isLocal",
-    "pyspark.sql.dataframe.join",
-    "pyspark.sql.dataframe.limit",
-    "pyspark.sql.dataframe.localCheckpoint",
-    "pyspark.sql.dataframe.melt",
-    "pyspark.sql.dataframe.observe",
-    "pyspark.sql.dataframe.offset",
-    "pyspark.sql.dataframe.orderBy",
-    "pyspark.sql.dataframe.pandas_api",
-    "pyspark.sql.dataframe.persist",
-    "pyspark.sql.dataframe.printSchema",
-    "pyspark.sql.dataframe.randomSplit",
-    "pyspark.sql.dataframe.registerTempTable",
-    "pyspark.sql.dataframe.repartition",
-    "pyspark.sql.dataframe.repartitionByRange",
-    "pyspark.sql.dataframe.replace",
-    "pyspark.sql.dataframe.rollup",
-    "pyspark.sql.dataframe.sameSemantics",
-    "pyspark.sql.dataframe.sample",
-    "pyspark.sql.dataframe.sampleBy",
-    "pyspark.sql.dataframe.select",
-    "pyspark.sql.dataframe.selectExpr",
-    "pyspark.sql.dataframe.semanticHash",
-    "pyspark.sql.dataframe.show",
-    "pyspark.sql.dataframe.sort",
-    "pyspark.sql.dataframe.sortWithinPartitions",
-    "pyspark.sql.dataframe.subtract",
-    "pyspark.sql.dataframe.summary",
-    "pyspark.sql.dataframe.tail",
-    "pyspark.sql.dataframe.take",
-    "pyspark.sql.dataframe.to",
-    "pyspark.sql.dataframe.toDF",
-    "pyspark.sql.dataframe.toJSON",
-    "pyspark.sql.dataframe.toLocalIterator",
-    "pyspark.sql.dataframe.to_koalas",
-    "pyspark.sql.dataframe.to_pandas_on_spark",
-    "pyspark.sql.dataframe.transform",
-    "pyspark.sql.dataframe.union",
-    "pyspark.sql.dataframe.unionAll",
-    "pyspark.sql.dataframe.unionByName",
-    "pyspark.sql.dataframe.unpersist",
-    "pyspark.sql.dataframe.unpivot",
-    "pyspark.sql.dataframe.where",
-    "pyspark.sql.dataframe.withColumn",
-    "pyspark.sql.dataframe.withColumnRenamed",
-    "pyspark.sql.dataframe.withColumns",
-    "pyspark.sql.dataframe.withColumnsRenamed",
-    "pyspark.sql.dataframe.withMetadata",
-    "pyspark.sql.dataframe.withWatermark",
-    "pyspark.sql.dataframe.writeTo",
-    "pyspark.sql.functions.abs",
-    "pyspark.sql.functions.acos",
-    "pyspark.sql.functions.acosh",
-    "pyspark.sql.functions.add_months",
-    "pyspark.sql.functions.aes_decrypt",
-    "pyspark.sql.functions.aes_encrypt",
-    "pyspark.sql.functions.aggregate",
-    "pyspark.sql.functions.any_value",
-    "pyspark.sql.functions.approxCountDistinct",
-    "pyspark.sql.functions.approx_count_distinct",
-    "pyspark.sql.functions.approx_percentile",
-    "pyspark.sql.functions.array",
-    "pyspark.sql.functions.array_agg",
-    "pyspark.sql.functions.array_append",
-    "pyspark.sql.functions.array_compact",
-    "pyspark.sql.functions.array_contains",
-    "pyspark.sql.functions.array_distinct",
-    "pyspark.sql.functions.array_except",
-    "pyspark.sql.functions.array_insert",
-    "pyspark.sql.functions.array_intersect",
-    "pyspark.sql.functions.array_join",
-    "pyspark.sql.functions.array_max",
-    "pyspark.sql.functions.array_min",
-    "pyspark.sql.functions.array_position",
-    "pyspark.sql.functions.array_prepend",
-    "pyspark.sql.functions.array_remove",
-    "pyspark.sql.functions.array_repeat",
-    "pyspark.sql.functions.array_size",
-    "pyspark.sql.functions.array_sort",
-    "pyspark.sql.functions.array_union",
-    "pyspark.sql.functions.arrays_overlap",
-    "pyspark.sql.functions.arrays_zip",
-    "pyspark.sql.functions.asc",
-    "pyspark.sql.functions.asc_nulls_first",
-    "pyspark.sql.functions.asc_nulls_last",
-    "pyspark.sql.functions.ascii",
-    "pyspark.sql.functions.asin",
-    "pyspark.sql.functions.asinh",
-    "pyspark.sql.functions.assert_true",
-    "pyspark.sql.functions.atan",
-    "pyspark.sql.functions.atan2",
-    "pyspark.sql.functions.atanh",
-    "pyspark.sql.functions.avg",
-    "pyspark.sql.functions.base64",
-    "pyspark.sql.functions.bin",
-    "pyspark.sql.functions.bit_and",
-    "pyspark.sql.functions.bit_count",
-    "pyspark.sql.functions.bit_get",
-    "pyspark.sql.functions.bit_length",
-    "pyspark.sql.functions.bit_or",
-    "pyspark.sql.functions.bit_xor",
-    "pyspark.sql.functions.bitmap_bit_position",
-    "pyspark.sql.functions.bitmap_bucket_number",
-    "pyspark.sql.functions.bitmap_construct_agg",
-    "pyspark.sql.functions.bitmap_count",
-    "pyspark.sql.functions.bitmap_or_agg",
-    "pyspark.sql.functions.bitwiseNOT",
-    "pyspark.sql.functions.bitwise_not",
-    "pyspark.sql.functions.bool_and",
-    "pyspark.sql.functions.bool_or",
-    "pyspark.sql.functions.broadcast",
-    "pyspark.sql.functions.bround",
-    "pyspark.sql.functions.btrim",
-    "pyspark.sql.functions.bucket",
-    "pyspark.sql.functions.call_function",
-    "pyspark.sql.functions.call_udf",
-    "pyspark.sql.functions.cardinality",
-    "pyspark.sql.functions.cbrt",
-    "pyspark.sql.functions.ceil",
-    "pyspark.sql.functions.ceiling",
-    "pyspark.sql.functions.char",
-    "pyspark.sql.functions.char_length",
-    "pyspark.sql.functions.character_length",
-    "pyspark.sql.functions.coalesce",
-    "pyspark.sql.functions.col",
-    "pyspark.sql.functions.collect_list",
-    "pyspark.sql.functions.collect_set",
-    "pyspark.sql.functions.column",
-    "pyspark.sql.functions.concat",
-    "pyspark.sql.functions.concat_ws",
-    "pyspark.sql.functions.contains",
-    "pyspark.sql.functions.conv",
-    "pyspark.sql.functions.convert_timezone",
-    "pyspark.sql.functions.corr",
-    "pyspark.sql.functions.cos",
-    "pyspark.sql.functions.cosh",
-    "pyspark.sql.functions.cot",
-    "pyspark.sql.functions.count",
-    "pyspark.sql.functions.countDistinct",
-    "pyspark.sql.functions.count_distinct",
-    "pyspark.sql.functions.count_if",
-    "pyspark.sql.functions.count_min_sketch",
-    "pyspark.sql.functions.covar_pop",
-    "pyspark.sql.functions.covar_samp",
-    "pyspark.sql.functions.crc32",
-    "pyspark.sql.functions.create_map",
-    "pyspark.sql.functions.csc",
-    "pyspark.sql.functions.cume_dist",
-    "pyspark.sql.functions.curdate",
-    "pyspark.sql.functions.current_catalog",
-    "pyspark.sql.functions.current_database",
-    "pyspark.sql.functions.current_date",
-    "pyspark.sql.functions.current_schema",
-    "pyspark.sql.functions.current_timestamp",
-    "pyspark.sql.functions.current_timezone",
-    "pyspark.sql.functions.current_user",
-    "pyspark.sql.functions.date_add",
-    "pyspark.sql.functions.date_diff",
-    "pyspark.sql.functions.date_format",
-    "pyspark.sql.functions.date_from_unix_date",
-    "pyspark.sql.functions.date_part",
-    "pyspark.sql.functions.date_sub",
-    "pyspark.sql.functions.date_trunc",
-    "pyspark.sql.functions.dateadd",
-    "pyspark.sql.functions.datediff",
-    "pyspark.sql.functions.datepart",
-    "pyspark.sql.functions.day",
-    "pyspark.sql.functions.dayofmonth",
-    "pyspark.sql.functions.dayofweek",
-    "pyspark.sql.functions.dayofyear",
-    "pyspark.sql.functions.days",
-    "pyspark.sql.functions.decode",
-    "pyspark.sql.functions.degrees",
-    "pyspark.sql.functions.dense_rank",
-    "pyspark.sql.functions.desc",
-    "pyspark.sql.functions.desc_nulls_first",
-    "pyspark.sql.functions.desc_nulls_last",
-    "pyspark.sql.functions.e",
-    "pyspark.sql.functions.element_at",
-    "pyspark.sql.functions.elt",
-    "pyspark.sql.functions.encode",
-    "pyspark.sql.functions.endswith",
-    "pyspark.sql.functions.equal_null",
-    "pyspark.sql.functions.every",
-    "pyspark.sql.functions.exists",
-    "pyspark.sql.functions.exp",
-    "pyspark.sql.functions.explode",
-    "pyspark.sql.functions.explode_outer",
-    "pyspark.sql.functions.expm1",
-    "pyspark.sql.functions.expr",
-    "pyspark.sql.functions.extract",
-    "pyspark.sql.functions.factorial",
-    "pyspark.sql.functions.filter",
-    "pyspark.sql.functions.find_in_set",
-    "pyspark.sql.functions.first",
-    "pyspark.sql.functions.first_value",
-    "pyspark.sql.functions.flatten",
-    "pyspark.sql.functions.floor",
-    "pyspark.sql.functions.forall",
-    "pyspark.sql.functions.format_number",
-    "pyspark.sql.functions.format_string",
-    "pyspark.sql.functions.from_csv",
-    "pyspark.sql.functions.from_json",
-    "pyspark.sql.functions.from_unixtime",
-    "pyspark.sql.functions.from_utc_timestamp",
-    "pyspark.sql.functions.get",
-    "pyspark.sql.functions.get_json_object",
-    "pyspark.sql.functions.getbit",
-    "pyspark.sql.functions.greatest",
-    "pyspark.sql.functions.grouping",
-    "pyspark.sql.functions.grouping_id",
-    "pyspark.sql.functions.hash",
-    "pyspark.sql.functions.hex",
-    "pyspark.sql.functions.histogram_numeric",
-    "pyspark.sql.functions.hll_sketch_agg",
-    "pyspark.sql.functions.hll_sketch_estimate",
-    "pyspark.sql.functions.hll_union",
-    "pyspark.sql.functions.hll_union_agg",
-    "pyspark.sql.functions.hour",
-    "pyspark.sql.functions.hours",
-    "pyspark.sql.functions.hypot",
-    "pyspark.sql.functions.ifnull",
-    "pyspark.sql.functions.ilike",
-    "pyspark.sql.functions.initcap",
-    "pyspark.sql.functions.inline",
-    "pyspark.sql.functions.inline_outer",
-    "pyspark.sql.functions.input_file_block_length",
-    "pyspark.sql.functions.input_file_block_start",
-    "pyspark.sql.functions.input_file_name",
-    "pyspark.sql.functions.instr",
-    "pyspark.sql.functions.isnan",
-    "pyspark.sql.functions.isnotnull",
-    "pyspark.sql.functions.isnull",
-    "pyspark.sql.functions.java_method",
-    "pyspark.sql.functions.json_array_length",
-    "pyspark.sql.functions.json_object_keys",
-    "pyspark.sql.functions.json_tuple",
-    "pyspark.sql.functions.kurtosis",
-    "pyspark.sql.functions.lag",
-    "pyspark.sql.functions.last",
-    "pyspark.sql.functions.last_day",
-    "pyspark.sql.functions.last_value",
-    "pyspark.sql.functions.lcase",
-    "pyspark.sql.functions.lead",
-    "pyspark.sql.functions.least",
-    "pyspark.sql.functions.left",
-    "pyspark.sql.functions.length",
-    "pyspark.sql.functions.levenshtein",
-    "pyspark.sql.functions.like",
-    "pyspark.sql.functions.lit",
-    "pyspark.sql.functions.ln",
-    "pyspark.sql.functions.localtimestamp",
-    "pyspark.sql.functions.locate",
-    "pyspark.sql.functions.log",
-    "pyspark.sql.functions.log10",
-    "pyspark.sql.functions.log1p",
-    "pyspark.sql.functions.log2",
-    "pyspark.sql.functions.lower",
-    "pyspark.sql.functions.lpad",
-    "pyspark.sql.functions.ltrim",
-    "pyspark.sql.functions.make_date",
-    "pyspark.sql.functions.make_dt_interval",
-    "pyspark.sql.functions.make_interval",
-    "pyspark.sql.functions.make_timestamp",
-    "pyspark.sql.functions.make_timestamp_ltz",
-    "pyspark.sql.functions.make_timestamp_ntz",
-    "pyspark.sql.functions.make_ym_interval",
-    "pyspark.sql.functions.map_concat",
-    "pyspark.sql.functions.map_contains_key",
-    "pyspark.sql.functions.map_entries",
-    "pyspark.sql.functions.map_filter",
-    "pyspark.sql.functions.map_from_arrays",
-    "pyspark.sql.functions.map_from_entries",
-    "pyspark.sql.functions.map_keys",
-    "pyspark.sql.functions.map_values",
-    "pyspark.sql.functions.map_zip_with",
-    "pyspark.sql.functions.mask",
-    "pyspark.sql.functions.max",
-    "pyspark.sql.functions.max_by",
-    "pyspark.sql.functions.md5",
-    "pyspark.sql.functions.mean",
-    "pyspark.sql.functions.median",
-    "pyspark.sql.functions.min",
-    "pyspark.sql.functions.min_by",
-    "pyspark.sql.functions.minute",
-    "pyspark.sql.functions.mode",
-    "pyspark.sql.functions.monotonically_increasing_id",
-    "pyspark.sql.functions.month",
-    "pyspark.sql.functions.months",
-    "pyspark.sql.functions.months_between",
-    "pyspark.sql.functions.named_struct",
-    "pyspark.sql.functions.nanvl",
-    "pyspark.sql.functions.negate",
-    "pyspark.sql.functions.negative",
-    "pyspark.sql.functions.next_day",
-    "pyspark.sql.functions.now",
-    "pyspark.sql.functions.nth_value",
-    "pyspark.sql.functions.ntile",
-    "pyspark.sql.functions.nullif",
-    "pyspark.sql.functions.nvl",
-    "pyspark.sql.functions.nvl2",
-    "pyspark.sql.functions.octet_length",
-    "pyspark.sql.functions.overlay",
-    "pyspark.sql.functions.parse_url",
-    "pyspark.sql.functions.percent_rank",
-    "pyspark.sql.functions.percentile",
-    "pyspark.sql.functions.percentile_approx",
-    "pyspark.sql.functions.pi",
-    "pyspark.sql.functions.pmod",
-    "pyspark.sql.functions.posexplode",
-    "pyspark.sql.functions.posexplode_outer",
-    "pyspark.sql.functions.position",
-    "pyspark.sql.functions.positive",
-    "pyspark.sql.functions.pow",
-    "pyspark.sql.functions.power",
-    "pyspark.sql.functions.printf",
-    "pyspark.sql.functions.product",
-    "pyspark.sql.functions.quarter",
-    "pyspark.sql.functions.radians",
-    "pyspark.sql.functions.raise_error",
-    "pyspark.sql.functions.rand",
-    "pyspark.sql.functions.randn",
-    "pyspark.sql.functions.rank",
-    "pyspark.sql.functions.reduce",
-    "pyspark.sql.functions.reflect",
-    "pyspark.sql.functions.regexp",
-    "pyspark.sql.functions.regexp_count",
-    "pyspark.sql.functions.regexp_extract",
-    "pyspark.sql.functions.regexp_extract_all",
-    "pyspark.sql.functions.regexp_instr",
-    "pyspark.sql.functions.regexp_like",
-    "pyspark.sql.functions.regexp_replace",
-    "pyspark.sql.functions.regexp_substr",
-    "pyspark.sql.functions.regr_avgx",
-    "pyspark.sql.functions.regr_avgy",
-    "pyspark.sql.functions.regr_count",
-    "pyspark.sql.functions.regr_intercept",
-    "pyspark.sql.functions.regr_r2",
-    "pyspark.sql.functions.regr_slope",
-    "pyspark.sql.functions.regr_sxx",
-    "pyspark.sql.functions.regr_sxy",
-    "pyspark.sql.functions.regr_syy",
-    "pyspark.sql.functions.repeat",
-    "pyspark.sql.functions.replace",
-    "pyspark.sql.functions.reverse",
-    "pyspark.sql.functions.right",
-    "pyspark.sql.functions.rint",
-    "pyspark.sql.functions.rlike",
-    "pyspark.sql.functions.round",
-    "pyspark.sql.functions.row_number",
-    "pyspark.sql.functions.rpad",
-    "pyspark.sql.functions.rtrim",
-    "pyspark.sql.functions.schema_of_csv",
-    "pyspark.sql.functions.schema_of_json",
-    "pyspark.sql.functions.sec",
-    "pyspark.sql.functions.second",
-    "pyspark.sql.functions.sentences",
-    "pyspark.sql.functions.sequence",
-    "pyspark.sql.functions.session_window",
-    "pyspark.sql.functions.sha",
-    "pyspark.sql.functions.sha1",
-    "pyspark.sql.functions.sha2",
-    "pyspark.sql.functions.shiftLeft",
-    "pyspark.sql.functions.shiftRight",
-    "pyspark.sql.functions.shiftRightUnsigned",
-    "pyspark.sql.functions.shiftleft",
-    "pyspark.sql.functions.shiftright",
-    "pyspark.sql.functions.shiftrightunsigned",
-    "pyspark.sql.functions.shuffle",
-    "pyspark.sql.functions.sign",
-    "pyspark.sql.functions.signum",
-    "pyspark.sql.functions.sin",
-    "pyspark.sql.functions.sinh",
-    "pyspark.sql.functions.size",
-    "pyspark.sql.functions.skewness",
-    "pyspark.sql.functions.slice",
-    "pyspark.sql.functions.some",
-    "pyspark.sql.functions.sort_array",
-    "pyspark.sql.functions.soundex",
-    "pyspark.sql.functions.spark_partition_id",
-    "pyspark.sql.functions.split",
-    "pyspark.sql.functions.split_part",
-    "pyspark.sql.functions.sqrt",
-    "pyspark.sql.functions.stack",
-    "pyspark.sql.functions.startswith",
-    "pyspark.sql.functions.std",
-    "pyspark.sql.functions.stddev",
-    "pyspark.sql.functions.stddev_pop",
-    "pyspark.sql.functions.stddev_samp",
-    "pyspark.sql.functions.str_to_map",
-    "pyspark.sql.functions.struct",
-    "pyspark.sql.functions.substr",
-    "pyspark.sql.functions.substring",
-    "pyspark.sql.functions.substring_index",
-    "pyspark.sql.functions.sum",
-    "pyspark.sql.functions.sumDistinct",
-    "pyspark.sql.functions.sum_distinct",
-    "pyspark.sql.functions.tan",
-    "pyspark.sql.functions.tanh",
-    "pyspark.sql.functions.timestamp_micros",
-    "pyspark.sql.functions.timestamp_millis",
-    "pyspark.sql.functions.timestamp_seconds",
-    "pyspark.sql.functions.toDegrees",
-    "pyspark.sql.functions.toRadians",
-    "pyspark.sql.functions.to_binary",
-    "pyspark.sql.functions.to_char",
-    "pyspark.sql.functions.to_csv",
-    "pyspark.sql.functions.to_date",
-    "pyspark.sql.functions.to_json",
-    "pyspark.sql.functions.to_number",
-    "pyspark.sql.functions.to_timestamp",
-    "pyspark.sql.functions.to_timestamp_ltz",
-    "pyspark.sql.functions.to_timestamp_ntz",
-    "pyspark.sql.functions.to_unix_timestamp",
-    "pyspark.sql.functions.to_utc_timestamp",
-    "pyspark.sql.functions.to_varchar",
-    "pyspark.sql.functions.transform",
-    "pyspark.sql.functions.transform_keys",
-    "pyspark.sql.functions.transform_values",
-    "pyspark.sql.functions.translate",
-    "pyspark.sql.functions.trim",
-    "pyspark.sql.functions.trunc",
-    "pyspark.sql.functions.try_add",
-    "pyspark.sql.functions.try_aes_decrypt",
-    "pyspark.sql.functions.try_avg",
-    "pyspark.sql.functions.try_divide",
-    "pyspark.sql.functions.try_element_at",
-    "pyspark.sql.functions.try_multiply",
-    "pyspark.sql.functions.try_subtract",
-    "pyspark.sql.functions.try_sum",
-    "pyspark.sql.functions.try_to_binary",
-    "pyspark.sql.functions.try_to_number",
-    "pyspark.sql.functions.try_to_timestamp",
-    "pyspark.sql.functions.typeof",
-    "pyspark.sql.functions.ucase",
-    "pyspark.sql.functions.udf",
-    "pyspark.sql.functions.udtf",
-    "pyspark.sql.functions.unbase64",
-    "pyspark.sql.functions.unhex",
-    "pyspark.sql.functions.unix_date",
-    "pyspark.sql.functions.unix_micros",
-    "pyspark.sql.functions.unix_millis",
-    "pyspark.sql.functions.unix_seconds",
-    "pyspark.sql.functions.unix_timestamp",
-    "pyspark.sql.functions.unwrap_udt",
-    "pyspark.sql.functions.upper",
-    "pyspark.sql.functions.url_decode",
-    "pyspark.sql.functions.url_encode",
-    "pyspark.sql.functions.user",
-    "pyspark.sql.functions.var_pop",
-    "pyspark.sql.functions.var_samp",
-    "pyspark.sql.functions.variance",
-    "pyspark.sql.functions.version",
-    "pyspark.sql.functions.weekday",
-    "pyspark.sql.functions.weekofyear",
-    "pyspark.sql.functions.when",
-    "pyspark.sql.functions.width_bucket",
-    "pyspark.sql.functions.window",
-    "pyspark.sql.functions.window_time",
-    "pyspark.sql.functions.xpath",
-    "pyspark.sql.functions.xpath_boolean",
-    "pyspark.sql.functions.xpath_double",
-    "pyspark.sql.functions.xpath_float",
-    "pyspark.sql.functions.xpath_int",
-    "pyspark.sql.functions.xpath_long",
-    "pyspark.sql.functions.xpath_number",
-    "pyspark.sql.functions.xpath_short",
-    "pyspark.sql.functions.xpath_string",
-    "pyspark.sql.functions.xxhash64",
-    "pyspark.sql.functions.year",
-    "pyspark.sql.functions.years",
-    "pyspark.sql.functions.zip_with",
-    "pyspark.sql.group.agg",
-    "pyspark.sql.group.avg",
-    "pyspark.sql.group.count",
-    "pyspark.sql.group.df_varargs_api",
-    "pyspark.sql.group.dfapi",
-    "pyspark.sql.group.max",
-    "pyspark.sql.group.mean",
-    "pyspark.sql.group.min",
-    "pyspark.sql.group.pivot",
-    "pyspark.sql.group.sum",
-    "pyspark.sql.pandas.conversion.createDataFrame",
-    "pyspark.sql.pandas.conversion.toPandas",
-    "pyspark.sql.pandas.functions.pandas_udf",
-    "pyspark.sql.pandas.group_ops.apply",
-    "pyspark.sql.pandas.group_ops.applyInPandas",
-    "pyspark.sql.pandas.group_ops.applyInPandasWithState",
-    "pyspark.sql.pandas.group_ops.cogroup",
-    "pyspark.sql.pandas.map_ops.mapInArrow",
-    "pyspark.sql.pandas.map_ops.mapInPandas",
-    "pyspark.sql.pandas.serializers.arrow_to_pandas",
-    "pyspark.sql.pandas.serializers.dump_stream",
-    "pyspark.sql.pandas.serializers.load_stream",
-    "pyspark.sql.pandas.typehints.check_iterator_annotation",
-    "pyspark.sql.pandas.typehints.check_tuple_annotation",
-    "pyspark.sql.pandas.typehints.check_union_annotation",
-    "pyspark.sql.pandas.typehints.infer_eval_type",
-    "pyspark.sql.pandas.types.from_arrow_schema",
-    "pyspark.sql.pandas.types.from_arrow_type",
-    "pyspark.sql.pandas.types.to_arrow_schema",
-    "pyspark.sql.pandas.types.to_arrow_type",
-    "pyspark.sql.pandas.utils.pyarrow_version_less_than_minimum",
-    "pyspark.sql.pandas.utils.require_minimum_pandas_version",
-    "pyspark.sql.pandas.utils.require_minimum_pyarrow_version",
-    "pyspark.sql.readwriter.append",
-    "pyspark.sql.readwriter.bucketBy",
-    "pyspark.sql.readwriter.create",
-    "pyspark.sql.readwriter.createOrReplace",
-    "pyspark.sql.readwriter.csv",
-    "pyspark.sql.readwriter.format",
-    "pyspark.sql.readwriter.insertInto",
-    "pyspark.sql.readwriter.jdbc",
-    "pyspark.sql.readwriter.json",
-    "pyspark.sql.readwriter.load",
-    "pyspark.sql.readwriter.mode",
-    "pyspark.sql.readwriter.option",
-    "pyspark.sql.readwriter.options",
-    "pyspark.sql.readwriter.orc",
-    "pyspark.sql.readwriter.overwrite",
-    "pyspark.sql.readwriter.overwritePartitions",
-    "pyspark.sql.readwriter.parquet",
-    "pyspark.sql.readwriter.partitionBy",
-    "pyspark.sql.readwriter.partitionedBy",
-    "pyspark.sql.readwriter.replace",
-    "pyspark.sql.readwriter.save",
-    "pyspark.sql.readwriter.saveAsTable",
-    "pyspark.sql.readwriter.schema",
-    "pyspark.sql.readwriter.sortBy",
-    "pyspark.sql.readwriter.table",
-    "pyspark.sql.readwriter.tableProperty",
-    "pyspark.sql.readwriter.text",
-    "pyspark.sql.readwriter.using",
-    "pyspark.sql.session.active",
-    "pyspark.sql.session.addArtifact",
-    "pyspark.sql.session.addArtifacts",
-    "pyspark.sql.session.addTag",
-    "pyspark.sql.session.appName",
-    "pyspark.sql.session.clearTags",
-    "pyspark.sql.session.config",
-    "pyspark.sql.session.copyFromLocalToFs",
-    "pyspark.sql.session.create",
-    "pyspark.sql.session.createDataFrame",
-    "pyspark.sql.session.enableHiveSupport",
-    "pyspark.sql.session.getActiveSession",
-    "pyspark.sql.session.getOrCreate",
-    "pyspark.sql.session.getTags",
-    "pyspark.sql.session.interruptAll",
-    "pyspark.sql.session.interruptOperation",
-    "pyspark.sql.session.interruptTag",
-    "pyspark.sql.session.master",
-    "pyspark.sql.session.newSession",
-    "pyspark.sql.session.range",
-    "pyspark.sql.session.remote",
-    "pyspark.sql.session.removeTag",
-    "pyspark.sql.session.sql",
-    "pyspark.sql.session.stop",
-    "pyspark.sql.session.table",
-    "pyspark.sql.sql_formatter.clear",
-    "pyspark.sql.sql_formatter.get_field",
-    "pyspark.sql.streaming.listener.fromJObject",
-    "pyspark.sql.streaming.listener.fromJson",
-    "pyspark.sql.streaming.listener.onQueryIdle",
-    "pyspark.sql.streaming.listener.onQueryProgress",
-    "pyspark.sql.streaming.listener.onQueryStarted",
-    "pyspark.sql.streaming.listener.onQueryTerminated",
-    "pyspark.sql.streaming.query.addListener",
-    "pyspark.sql.streaming.query.awaitAnyTermination",
-    "pyspark.sql.streaming.query.awaitTermination",
-    "pyspark.sql.streaming.query.exception",
-    "pyspark.sql.streaming.query.explain",
-    "pyspark.sql.streaming.query.get",
-    "pyspark.sql.streaming.query.processAllAvailable",
-    "pyspark.sql.streaming.query.removeListener",
-    "pyspark.sql.streaming.query.resetTerminated",
-    "pyspark.sql.streaming.query.stop",
-    "pyspark.sql.streaming.readwriter.csv",
-    "pyspark.sql.streaming.readwriter.foreach",
-    "pyspark.sql.streaming.readwriter.foreachBatch",
-    "pyspark.sql.streaming.readwriter.format",
-    "pyspark.sql.streaming.readwriter.json",
-    "pyspark.sql.streaming.readwriter.load",
-    "pyspark.sql.streaming.readwriter.option",
-    "pyspark.sql.streaming.readwriter.options",
-    "pyspark.sql.streaming.readwriter.orc",
-    "pyspark.sql.streaming.readwriter.outputMode",
-    "pyspark.sql.streaming.readwriter.parquet",
-    "pyspark.sql.streaming.readwriter.partitionBy",
-    "pyspark.sql.streaming.readwriter.queryName",
-    "pyspark.sql.streaming.readwriter.schema",
-    "pyspark.sql.streaming.readwriter.start",
-    "pyspark.sql.streaming.readwriter.table",
-    "pyspark.sql.streaming.readwriter.text",
-    "pyspark.sql.streaming.readwriter.toTable",
-    "pyspark.sql.streaming.readwriter.trigger",
-    "pyspark.sql.streaming.state.getCurrentProcessingTimeMs",
-    "pyspark.sql.streaming.state.getCurrentWatermarkMs",
-    "pyspark.sql.streaming.state.json",
-    "pyspark.sql.streaming.state.remove",
-    "pyspark.sql.streaming.state.setTimeoutDuration",
-    "pyspark.sql.streaming.state.setTimeoutTimestamp",
-    "pyspark.sql.streaming.state.update",
-    "pyspark.sql.types.add",
-    "pyspark.sql.types.asDict",
-    "pyspark.sql.types.can_convert",
-    "pyspark.sql.types.convert",
-    "pyspark.sql.types.deserialize",
-    "pyspark.sql.types.fieldNames",
-    "pyspark.sql.types.fromInternal",
-    "pyspark.sql.types.fromJson",
-    "pyspark.sql.types.json",
-    "pyspark.sql.types.jsonValue",
-    "pyspark.sql.types.module",
-    "pyspark.sql.types.needConversion",
-    "pyspark.sql.types.scalaUDT",
-    "pyspark.sql.types.serialize",
-    "pyspark.sql.types.simpleString",
-    "pyspark.sql.types.sqlType",
-    "pyspark.sql.types.toInternal",
-    "pyspark.sql.types.typeName",
-    "pyspark.sql.udf.asNondeterministic",
-    "pyspark.sql.udf.register",
-    "pyspark.sql.udf.registerJavaFunction",
-    "pyspark.sql.udf.registerJavaUDAF",
-    "pyspark.sql.udtf.asDeterministic",
-    "pyspark.sql.udtf.register",
-    "pyspark.sql.utils.call",
-    "pyspark.sql.utils.get_active_spark_context",
-    "pyspark.sql.utils.get_column_class",
-    "pyspark.sql.utils.get_dataframe_class",
-    "pyspark.sql.utils.get_window_class",
-    "pyspark.sql.utils.is_remote",
-    "pyspark.sql.utils.is_timestamp_ntz_preferred",
-    "pyspark.sql.utils.pyspark_column_op",
-    "pyspark.sql.utils.require_test_compiled",
-    "pyspark.sql.utils.toJArray",
-    "pyspark.sql.utils.to_str",
-    "pyspark.sql.utils.try_remote_avro_functions",
-    "pyspark.sql.utils.try_remote_functions",
-    "pyspark.sql.utils.try_remote_observation",
-    "pyspark.sql.utils.try_remote_protobuf_functions",
-    "pyspark.sql.utils.try_remote_session_classmethod",
-    "pyspark.sql.utils.try_remote_window",
-    "pyspark.sql.utils.try_remote_windowspec",
-    "pyspark.sql.window.orderBy",
-    "pyspark.sql.window.partitionBy",
-    "pyspark.sql.window.rangeBetween",
-    "pyspark.sql.window.rowsBetween",
-    "pyspark.statcounter.asDict",
-    "pyspark.statcounter.copy",
-    "pyspark.statcounter.count",
-    "pyspark.statcounter.max",
-    "pyspark.statcounter.mean",
-    "pyspark.statcounter.merge",
-    "pyspark.statcounter.mergeStats",
-    "pyspark.statcounter.min",
-    "pyspark.statcounter.sampleStdev",
-    "pyspark.statcounter.sampleVariance",
-    "pyspark.statcounter.stdev",
-    "pyspark.statcounter.sum",
-    "pyspark.statcounter.variance",
-    "pyspark.status.getActiveJobsIds",
-    "pyspark.status.getActiveStageIds",
-    "pyspark.status.getJobIdsForGroup",
-    "pyspark.status.getJobInfo",
-    "pyspark.status.getStageInfo",
-    "pyspark.taskcontext.allGather",
-    "pyspark.taskcontext.attemptNumber",
-    "pyspark.taskcontext.barrier",
-    "pyspark.taskcontext.cpus",
-    "pyspark.taskcontext.get",
-    "pyspark.taskcontext.getLocalProperty",
-    "pyspark.taskcontext.getTaskInfos",
-    "pyspark.taskcontext.partitionId",
-    "pyspark.taskcontext.resources",
-    "pyspark.taskcontext.stageId",
-    "pyspark.taskcontext.taskAttemptId",
-    "pyspark.traceback_utils.first_spark_call",
-    "pyspark.util.fail_on_stopiteration",
-    "pyspark.util.inheritable_thread_target",
-    "pyspark.util.majorMinorVersion",
-    "pyspark.util.print_exec",
-    "pyspark.util.start",
-    "pyspark.util.try_simplify_traceback",
-    "pyspark.util.walk_tb",
-    "pysparkMemory",
-    "pyspark_column_op",
-    "python_cogroup",
-    "python_full_outer_join",
-    "python_join",
-    "python_left_outer_join",
-    "python_right_outer_join",
-    "quarter",
-    "queryName",
-    "radians",
-    "raise_error",
-    "rand",
-    "randn",
-    "randomSplit",
-    "range",
-    "rangeBetween",
-    "rank",
-    "read_bool",
-    "read_int",
-    "read_long",
-    "recoverPartitions",
-    "reduce",
-    "reduceByKey",
-    "reduceByKeyLocally",
-    "reducer_override",
-    "reflect",
-    "refreshByPath",
-    "refreshTable",
-    "regexp",
-    "regexp_count",
-    "regexp_extract",
-    "regexp_extract_all",
-    "regexp_instr",
-    "regexp_like",
-    "regexp_replace",
-    "regexp_substr",
-    "register",
-    "registerDataFrameAsTable",
-    "registerFunction",
-    "registerJavaFunction",
-    "registerJavaUDAF",
-    "registerTempTable",
-    "register_input_converter",
-    "register_pickle_by_value",
-    "regr_avgx",
-    "regr_avgy",
-    "regr_count",
-    "regr_intercept",
-    "regr_r2",
-    "regr_slope",
-    "regr_sxx",
-    "regr_sxy",
-    "regr_syy",
-    "remote",
-    "remove",
-    "removeJobTag",
-    "removeListener",
-    "removeTag",
-    "repartition",
-    "repartitionAndSortWithinPartitions",
-    "repartitionByRange",
-    "repeat",
-    "replace",
-    "require",
-    "require_minimum_pandas_version",
-    "require_minimum_pyarrow_version",
-    "require_test_compiled",
-    "resetTerminated",
-    "resource",
-    "resources",
-    "reverse",
-    "right",
-    "rightOuterJoin",
-    "rint",
-    "rlike",
-    "rollup",
-    "round",
-    "row_number",
-    "rowsBetween",
-    "rpad",
-    "rtrim",
-    "run",
-    "runJob",
-    "runctx",
-    "sameSemantics",
-    "sample",
-    "sampleBy",
-    "sampleByKey",
-    "sampleStdev",
-    "sampleVariance",
-    "save",
-    "saveAsHadoopDataset",
-    "saveAsHadoopFile",
-    "saveAsNewAPIHadoopDataset",
-    "saveAsNewAPIHadoopFile",
-    "saveAsPickleFile",
-    "saveAsSequenceFile",
-    "saveAsTable",
-    "saveAsTextFile",
-    "scalaUDT",
-    "schema",
-    "schema_of_csv",
-    "schema_of_json",
-    "sec",
-    "second",
-    "select",
-    "selectExpr",
-    "semanticHash",
-    "sentences",
-    "sequence",
-    "sequenceFile",
-    "serialize",
-    "serve_forever",
-    "server_activate",
-    "server_bind",
-    "server_close",
-    "service_actions",
-    "session_window",
-    "set",
-    "setAll",
-    "setAppName",
-    "setCheckpointDir",
-    "setConf",
-    "setCurrentCatalog",
-    "setCurrentDatabase",
-    "setDaemon",
-    "setExecutorEnv",
-    "setIfMissing",
-    "setInterruptOnCancel",
-    "setJobDescription",
-    "setJobGroup",
-    "setLocalProperty",
-    "setLogLevel",
-    "setMaster",
-    "setName",
-    "setSparkHome",
-    "setSystemProperty",
-    "setTimeoutDuration",
-    "setTimeoutTimestamp",
-    "sha",
-    "sha1",
-    "sha2",
-    "shiftLeft",
-    "shiftRight",
-    "shiftRightUnsigned",
-    "shiftleft",
-    "shiftright",
-    "shiftrightunsigned",
-    "show",
-    "show_profiles",
-    "shuffle",
-    "shutdown",
-    "shutdown_request",
-    "sign",
-    "signature",
-    "signum",
-    "simpleString",
-    "sin",
-    "since",
-    "sinh",
-    "size",
-    "skewness",
-    "slice",
-    "socketserver.close_request",
-    "socketserver.fileno",
-    "socketserver.finish_request",
-    "socketserver.get_request",
-    "socketserver.handle_error",
-    "socketserver.handle_request",
-    "socketserver.handle_timeout",
-    "socketserver.process_request",
-    "socketserver.serve_forever",
-    "socketserver.server_activate",
-    "socketserver.server_bind",
-    "socketserver.server_close",
-    "socketserver.service_actions",
-    "socketserver.shutdown_request",
-    "socketserver.verify_request",
-    "some",
-    "sort",
-    "sortBy",
-    "sortByKey",
-    "sortWithinPartitions",
-    "sort_array",
-    "sorted",
-    "soundex",
-    "sparkUser",
-    "spark_partition_id",
-    "split",
-    "split_part",
-    "sql",
-    "sqlType",
-    "sqrt",
-    "stack",
-    "stageId",
-    "start",
-    "startswith",
-    "stats",
-    "statusTracker",
-    "std",
-    "stddev",
-    "stddev_pop",
-    "stddev_samp",
-    "stdev",
-    "stop",
-    "str_to_map",
-    "string.check_unused_args",
-    "string.convert_field",
-    "string.format",
-    "string.format_field",
-    "string.get_value",
-    "string.parse",
-    "string.vformat",
-    "struct",
-    "subimport",
-    "substr",
-    "substring",
-    "substring_index",
-    "subtract",
-    "subtractByKey",
-    "sum",
-    "sumApprox",
-    "sumDistinct",
-    "sum_distinct",
-    "summary",
-    "table",
-    "tableExists",
-    "tableNames",
-    "tableProperty",
-    "tables",
-    "tail",
-    "take",
-    "takeOrdered",
-    "takeSample",
-    "tan",
-    "tanh",
-    "taskAttemptId",
-    "tempfile.NamedTemporaryFile",
-    "text",
-    "textFile",
-    "threading.RLock",
-    "threading.getName",
-    "threading.isDaemon",
-    "threading.is_alive",
-    "threading.join",
-    "threading.run",
-    "threading.setDaemon",
-    "threading.setName",
-    "timestamp_micros",
-    "timestamp_millis",
-    "timestamp_seconds",
-    "to",
-    "toDF",
-    "toDebugString",
-    "toDegrees",
-    "toInternal",
-    "toJArray",
-    "toJSON",
-    "toLocalIterator",
-    "toPandas",
-    "toRadians",
-    "toTable",
-    "to_arrow_schema",
-    "to_arrow_type",
-    "to_binary",
-    "to_char",
-    "to_csv",
-    "to_date",
-    "to_json",
-    "to_koalas",
-    "to_number",
-    "to_pandas_on_spark",
-    "to_str",
-    "to_timestamp",
-    "to_timestamp_ltz",
-    "to_timestamp_ntz",
-    "to_unix_timestamp",
-    "to_utc_timestamp",
-    "to_varchar",
-    "top",
-    "trace",
-    "trace_max_mem",
-    "trace_memory_usage",
-    "transform",
-    "transform_keys",
-    "transform_values",
-    "translate",
-    "treeAggregate",
-    "treeReduce",
-    "trigger",
-    "trim",
-    "trunc",
-    "try_add",
-    "try_aes_decrypt",
-    "try_avg",
-    "try_divide",
-    "try_element_at",
-    "try_multiply",
-    "try_remote_avro_functions",
-    "try_remote_functions",
-    "try_remote_observation",
-    "try_remote_protobuf_functions",
-    "try_remote_session_classmethod",
-    "try_remote_window",
-    "try_remote_windowspec",
-    "try_simplify_traceback",
-    "try_subtract",
-    "try_sum",
-    "try_to_binary",
-    "try_to_number",
-    "try_to_timestamp",
-    "typeName",
-    "typeof",
-    "typing.NamedTuple",
-    "typing.cast",
-    "typing.get_type_hints",
-    "typing.no_type_check",
-    "typing.overload",
-    "ucase",
-    "udf",
-    "udtf",
-    "unbase64",
-    "uncacheTable",
-    "unhex",
-    "union",
-    "unionAll",
-    "unionByName",
-    "unix_date",
-    "unix_micros",
-    "unix_millis",
-    "unix_seconds",
-    "unix_timestamp",
-    "unpersist",
-    "unpivot",
-    "unregister_pickle_by_value",
-    "unset",
-    "unwrap_spark_exception",
-    "unwrap_udt",
-    "update",
-    "upper",
-    "url_decode",
-    "url_encode",
-    "user",
-    "using",
-    "values",
-    "var_pop",
-    "var_samp",
-    "variance",
-    "verify_request",
-    "version",
-    "vformat",
-    "walk_tb",
-    "warn",
-    "warnings.filterwarnings",
-    "weekday",
-    "weekofyear",
-    "when",
-    "where",
-    "wholeTextFiles",
-    "width_bucket",
-    "window",
-    "window_time",
-    "withColumn",
-    "withColumnRenamed",
-    "withColumns",
-    "withColumnsRenamed",
-    "withField",
-    "withMetadata",
-    "withResources",
-    "withWatermark",
-    "wrap_function",
-    "wraps",
-    "write",
-    "writeTo",
-    "write_int",
-    "write_long",
-    "write_with_length",
-    "xpath",
-    "xpath_boolean",
-    "xpath_double",
-    "xpath_float",
-    "xpath_int",
-    "xpath_long",
-    "xpath_number",
-    "xpath_short",
-    "xpath_string",
-    "xxhash64",
-    "year",
-    "years",
-    "zero",
-    "zip",
-    "zipWithIndex",
-    "zipWithUniqueId",
-    "zip_with"
+    {
+      "name": "abs",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "accumulator",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "acos",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "acosh",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "active",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "add",
+      "module": "pyspark.accumulators"
+    },
+    {
+      "name": "add",
+      "module": "pyspark.broadcast"
+    },
+    {
+      "name": "add",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "add",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "addArchive",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "addArtifact",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "addArtifacts",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "addFile",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "addInPlace",
+      "module": "pyspark.accumulators"
+    },
+    {
+      "name": "addInPlace",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "addJobTag",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "addListener",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "addPyFile",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "addTag",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "add_function",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "add_months",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "add_profiler",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "aes_decrypt",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "aes_encrypt",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "agg",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "agg",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "aggregate",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "aggregate",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "aggregateByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "alias",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "alias",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "allGather",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "any_value",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "appName",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "append",
+      "module": "pyspark.shuffle"
+    },
+    {
+      "name": "append",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "apply",
+      "module": "pyspark.sql.pandas.group_ops"
+    },
+    {
+      "name": "applyInPandas",
+      "module": "pyspark.sql.pandas.group_ops"
+    },
+    {
+      "name": "applyInPandasWithState",
+      "module": "pyspark.sql.pandas.group_ops"
+    },
+    {
+      "name": "approxCountDistinct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "approxQuantile",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "approx_count_distinct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "approx_percentile",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_agg",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_append",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_compact",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_contains",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_distinct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_except",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_insert",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_intersect",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_join",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_max",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_min",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_position",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_prepend",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_remove",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_repeat",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_size",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_sort",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "array_union",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "arrays_overlap",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "arrays_zip",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "arrow_to_pandas",
+      "module": "pyspark.sql.pandas.serializers"
+    },
+    {
+      "name": "asDeterministic",
+      "module": "pyspark.sql.udtf"
+    },
+    {
+      "name": "asDict",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "asDict",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "asNondeterministic",
+      "module": "pyspark.sql.udf"
+    },
+    {
+      "name": "asc",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "asc",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "asc_nulls_first",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "asc_nulls_first",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "asc_nulls_last",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "asc_nulls_last",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ascii",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "asin",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "asinh",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "assert_true",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "astype",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "atan",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "atan2",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "atanh",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "attemptNumber",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "avg",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "avg",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "awaitAnyTermination",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "awaitTermination",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "barrier",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "barrier",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "base64",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "between",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "bin",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "binaryFiles",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "binaryRecords",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "bit_and",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bit_count",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bit_get",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bit_length",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bit_or",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bit_xor",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bitmap_bit_position",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bitmap_bucket_number",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bitmap_construct_agg",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bitmap_count",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bitmap_or_agg",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bitwiseAND",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "bitwiseNOT",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bitwiseOR",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "bitwiseXOR",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "bitwise_not",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bool_and",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bool_or",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "broadcast",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "broadcast",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bround",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "btrim",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bucket",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "bucketBy",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "cache",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "cache",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "cacheTable",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "cacheTable",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "call",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "call_function",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "call_udf",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "can_convert",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "cancelAllJobs",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "cancelJobGroup",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "cancelJobsWithTag",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "capture_sql_exception",
+      "module": "pyspark.errors.exceptions.captured"
+    },
+    {
+      "name": "cardinality",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cartesian",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "cast",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "cbrt",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ceil",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ceiling",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cell_set",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "char",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "char_length",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "character_length",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "check_iterator_annotation",
+      "module": "pyspark.sql.pandas.typehints"
+    },
+    {
+      "name": "check_tuple_annotation",
+      "module": "pyspark.sql.pandas.typehints"
+    },
+    {
+      "name": "check_union_annotation",
+      "module": "pyspark.sql.pandas.typehints"
+    },
+    {
+      "name": "checkpoint",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "checkpoint",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "cleanShuffleDependencies",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "clear",
+      "module": "pyspark.broadcast"
+    },
+    {
+      "name": "clear",
+      "module": "pyspark.sql.sql_formatter"
+    },
+    {
+      "name": "clearCache",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "clearCache",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "clearExecutorResourceRequests",
+      "module": "pyspark.resource.profile"
+    },
+    {
+      "name": "clearJobTags",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "clearTags",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "clearTaskResourceRequests",
+      "module": "pyspark.resource.profile"
+    },
+    {
+      "name": "close",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "coalesce",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "coalesce",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "coalesce",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cogroup",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "cogroup",
+      "module": "pyspark.sql.pandas.group_ops"
+    },
+    {
+      "name": "col",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "colRegex",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "collect",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "collect",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "collectAsMap",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "collectWithJobGroup",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "collect_list",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "collect_set",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "column",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "combineByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "concat",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "concat_ws",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "config",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "contains",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "contains",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "contains",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "conv",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "convert",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "convert_exception",
+      "module": "pyspark.errors.exceptions.captured"
+    },
+    {
+      "name": "convert_timezone",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "copy",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "copyFromLocalToFs",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "copy_func",
+      "module": "pyspark"
+    },
+    {
+      "name": "cores",
+      "module": "pyspark.resource.requests"
+    },
+    {
+      "name": "corr",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "corr",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cos",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cosh",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cot",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "count",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "count",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "count",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "count",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "count",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "countApprox",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "countApproxDistinct",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "countByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "countByValue",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "countDistinct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "count_distinct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "count_if",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "count_min_sketch",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cov",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "covar_pop",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "covar_samp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "cpus",
+      "module": "pyspark.resource.requests"
+    },
+    {
+      "name": "cpus",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "crc32",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "create",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "create",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "createDataFrame",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "createDataFrame",
+      "module": "pyspark.sql.pandas.conversion"
+    },
+    {
+      "name": "createDataFrame",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "createExternalTable",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "createExternalTable",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "createGlobalTempView",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "createOrReplace",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "createOrReplaceGlobalTempView",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "createOrReplaceTempView",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "createTable",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "createTempView",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "create_map",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "crossJoin",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "crosstab",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "csc",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "csv",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "csv",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "cube",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "cume_dist",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "curdate",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "currentCatalog",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "currentDatabase",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "current_catalog",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "current_database",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "current_date",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "current_schema",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "current_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "current_timezone",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "current_user",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "databaseExists",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "date_add",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "date_diff",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "date_format",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "date_from_unix_date",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "date_part",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "date_sub",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "date_trunc",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "dateadd",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "datediff",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "datepart",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "day",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "dayofmonth",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "dayofweek",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "dayofyear",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "days",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "decode",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "degrees",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "dense_rank",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "desc",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "desc",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "desc_nulls_first",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "desc_nulls_first",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "desc_nulls_last",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "desc_nulls_last",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "describe",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "deserialize",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "destroy",
+      "module": "pyspark.broadcast"
+    },
+    {
+      "name": "df_varargs_api",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "dfapi",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "distinct",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "distinct",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "drop",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "dropDuplicates",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "dropDuplicatesWithinWatermark",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "dropFields",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "dropGlobalTempView",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "dropTempTable",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "dropTempView",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "drop_duplicates",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "dropna",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "dump",
+      "module": "pyspark.broadcast"
+    },
+    {
+      "name": "dump",
+      "module": "pyspark.cloudpickle.cloudpickle_fast"
+    },
+    {
+      "name": "dump",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "dump_profiles",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "dump_profiles",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "dump_stream",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "dump_stream",
+      "module": "pyspark.sql.pandas.serializers"
+    },
+    {
+      "name": "dumps",
+      "module": "pyspark.cloudpickle.cloudpickle_fast"
+    },
+    {
+      "name": "dumps",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "dynamic_subimport",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "e",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "element_at",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "elt",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "emptyRDD",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "enableHiveSupport",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "encode",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "endswith",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "endswith",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ensure_callback_server_started",
+      "module": "pyspark.java_gateway"
+    },
+    {
+      "name": "eqNullSafe",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "equal_null",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "every",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "exceptAll",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "exception",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "exists",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "exp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "explain",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "explain",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "explode",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "explode_outer",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "expm1",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "expr",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "extract",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "factorial",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "fail_on_stopiteration",
+      "module": "pyspark.util"
+    },
+    {
+      "name": "fieldNames",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "fill",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "fillna",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "filter",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "filter",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "filter",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "find_in_set",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "first",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "first",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "first",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "first_spark_call",
+      "module": "pyspark.traceback_utils"
+    },
+    {
+      "name": "first_value",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "flatMap",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "flatMapValues",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "flatten",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "flattened_serializer",
+      "module": "pyspark.shuffle"
+    },
+    {
+      "name": "floor",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "fold",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "foldByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "forall",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "foreach",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "foreach",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "foreach",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "foreachBatch",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "foreachPartition",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "foreachPartition",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "format",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "format",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "format_number",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "format_string",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "freqItems",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "fromInternal",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "fromJObject",
+      "module": "pyspark.sql.streaming.listener"
+    },
+    {
+      "name": "fromJson",
+      "module": "pyspark.sql.streaming.listener"
+    },
+    {
+      "name": "fromJson",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "from_arrow_schema",
+      "module": "pyspark.sql.pandas.types"
+    },
+    {
+      "name": "from_arrow_type",
+      "module": "pyspark.sql.pandas.types"
+    },
+    {
+      "name": "from_csv",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "from_json",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "from_unixtime",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "from_utc_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "fullOuterJoin",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "func",
+      "module": "pyspark.rddsampler"
+    },
+    {
+      "name": "functionExists",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "get",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "get",
+      "module": "pyspark.files"
+    },
+    {
+      "name": "get",
+      "module": "pyspark.sql.conf"
+    },
+    {
+      "name": "get",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "get",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "get",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "getActiveJobsIds",
+      "module": "pyspark.status"
+    },
+    {
+      "name": "getActiveSession",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "getActiveStageIds",
+      "module": "pyspark.status"
+    },
+    {
+      "name": "getAll",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "getCheckpointDir",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "getCheckpointFile",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "getConf",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "getConf",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "getCurrentProcessingTimeMs",
+      "module": "pyspark.sql.streaming.state"
+    },
+    {
+      "name": "getCurrentWatermarkMs",
+      "module": "pyspark.sql.streaming.state"
+    },
+    {
+      "name": "getDatabase",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "getErrorClass",
+      "module": "pyspark.errors.exceptions.base"
+    },
+    {
+      "name": "getErrorClass",
+      "module": "pyspark.errors.exceptions.captured"
+    },
+    {
+      "name": "getField",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "getFunction",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "getItem",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "getJobIdsForGroup",
+      "module": "pyspark.status"
+    },
+    {
+      "name": "getJobInfo",
+      "module": "pyspark.status"
+    },
+    {
+      "name": "getJobTags",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "getLocalProperty",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "getLocalProperty",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "getMessageParameters",
+      "module": "pyspark.errors.exceptions.base"
+    },
+    {
+      "name": "getMessageParameters",
+      "module": "pyspark.errors.exceptions.captured"
+    },
+    {
+      "name": "getNumPartitions",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "getOrCreate",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "getOrCreate",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "getOrCreate",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "getPoissonSample",
+      "module": "pyspark.rddsampler"
+    },
+    {
+      "name": "getResourceProfile",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "getRootDirectory",
+      "module": "pyspark.files"
+    },
+    {
+      "name": "getSqlState",
+      "module": "pyspark.errors.exceptions.base"
+    },
+    {
+      "name": "getSqlState",
+      "module": "pyspark.errors.exceptions.captured"
+    },
+    {
+      "name": "getStageInfo",
+      "module": "pyspark.status"
+    },
+    {
+      "name": "getStorageLevel",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "getTable",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "getTags",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "getTaskInfos",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "getUniformSample",
+      "module": "pyspark.rddsampler"
+    },
+    {
+      "name": "get_active_spark_context",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "get_column_class",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "get_dataframe_class",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "get_error_message",
+      "module": "pyspark.errors.utils"
+    },
+    {
+      "name": "get_field",
+      "module": "pyspark.sql.sql_formatter"
+    },
+    {
+      "name": "get_json_object",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "get_message_template",
+      "module": "pyspark.errors.utils"
+    },
+    {
+      "name": "get_used_memory",
+      "module": "pyspark.shuffle"
+    },
+    {
+      "name": "get_window_class",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "getbit",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "glom",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "greatest",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "groupBy",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "groupBy",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "groupByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "groupWith",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "groupby",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "grouping",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "grouping_id",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hadoopFile",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "hadoopRDD",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "hash",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "head",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "hex",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hint",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "histogram",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "histogram_numeric",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hll_sketch_agg",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hll_sketch_estimate",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hll_union",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hll_union_agg",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hour",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hours",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "hypot",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "id",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "ifnull",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ilike",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "ilike",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "infer_eval_type",
+      "module": "pyspark.sql.pandas.typehints"
+    },
+    {
+      "name": "inheritable_thread_target",
+      "module": "pyspark.util"
+    },
+    {
+      "name": "initRandomGenerator",
+      "module": "pyspark.rddsampler"
+    },
+    {
+      "name": "initcap",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "inline",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "inline_outer",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "inputFiles",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "input_file_block_length",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "input_file_block_start",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "input_file_name",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "insertInto",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "install_exception_handler",
+      "module": "pyspark.errors.exceptions.captured"
+    },
+    {
+      "name": "instance",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "instr",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "interruptAll",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "interruptOperation",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "interruptTag",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "intersect",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "intersectAll",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "intersection",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "isCached",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "isCheckpointed",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "isEmpty",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "isEmpty",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "isLocal",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "isLocallyCheckpointed",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "isModifiable",
+      "module": "pyspark.sql.conf"
+    },
+    {
+      "name": "isNotNull",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "isNull",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "is_remote",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "is_timestamp_ntz_preferred",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "is_tornado_coroutine",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "isin",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "isnan",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "isnotnull",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "isnull",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "items",
+      "module": "pyspark.shuffle"
+    },
+    {
+      "name": "java_method",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "jdbc",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "join",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "join",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "json",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "json",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "json",
+      "module": "pyspark.sql.streaming.state"
+    },
+    {
+      "name": "json",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "jsonValue",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "json_array_length",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "json_object_keys",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "json_tuple",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "keyBy",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "keys",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "keyword_only",
+      "module": "pyspark"
+    },
+    {
+      "name": "kurtosis",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "lag",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "last",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "last_day",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "last_value",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "launch_gateway",
+      "module": "pyspark.java_gateway"
+    },
+    {
+      "name": "lcase",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "lead",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "least",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "left",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "leftOuterJoin",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "length",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "levenshtein",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "like",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "like",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "limit",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "listCatalogs",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "listColumns",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "listDatabases",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "listFunctions",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "listTables",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "list_registry_pickle_by_value",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "lit",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ln",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "load",
+      "module": "pyspark.broadcast"
+    },
+    {
+      "name": "load",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "load",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "load_from_path",
+      "module": "pyspark.broadcast"
+    },
+    {
+      "name": "load_stream",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "load_stream",
+      "module": "pyspark.sql.pandas.serializers"
+    },
+    {
+      "name": "loads",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "localCheckpoint",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "localCheckpoint",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "local_connect_and_auth",
+      "module": "pyspark.java_gateway"
+    },
+    {
+      "name": "localtimestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "locate",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "log",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "log10",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "log1p",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "log2",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "lookup",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "lower",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "lpad",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ltrim",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "majorMinorVersion",
+      "module": "pyspark.util"
+    },
+    {
+      "name": "make_date",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "make_dt_interval",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "make_interval",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "make_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "make_timestamp_ltz",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "make_timestamp_ntz",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "make_ym_interval",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "mapInArrow",
+      "module": "pyspark.sql.pandas.map_ops"
+    },
+    {
+      "name": "mapInPandas",
+      "module": "pyspark.sql.pandas.map_ops"
+    },
+    {
+      "name": "mapPartitions",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "mapPartitionsWithIndex",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "mapPartitionsWithSplit",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "mapValues",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "map_concat",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_contains_key",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_entries",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_filter",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_from_arrays",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_from_entries",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_keys",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_values",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "map_zip_with",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "mask",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "master",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "max",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "max",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "max",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "max",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "max_by",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "md5",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "mean",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "mean",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "mean",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "mean",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "meanApprox",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "median",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "melt",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "memory",
+      "module": "pyspark.resource.requests"
+    },
+    {
+      "name": "memoryOverhead",
+      "module": "pyspark.resource.requests"
+    },
+    {
+      "name": "merge",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "mergeCombiners",
+      "module": "pyspark.shuffle"
+    },
+    {
+      "name": "mergeStats",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "mergeValues",
+      "module": "pyspark.shuffle"
+    },
+    {
+      "name": "min",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "min",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "min",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "min",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "min_by",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "minute",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "mode",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "mode",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "module",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "monotonically_increasing_id",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "month",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "months",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "months_between",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "name",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "name",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "named_struct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "nanvl",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "needConversion",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "negate",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "negative",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "newAPIHadoopFile",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "newAPIHadoopRDD",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "newSession",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "newSession",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "new_memory_profiler",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "new_profiler",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "new_udf_profiler",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "next_day",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "now",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "nth_value",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ntile",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "nullif",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "nvl",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "nvl2",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "observe",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "octet_length",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "offheapMemory",
+      "module": "pyspark.resource.requests"
+    },
+    {
+      "name": "offset",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "onQueryIdle",
+      "module": "pyspark.sql.streaming.listener"
+    },
+    {
+      "name": "onQueryProgress",
+      "module": "pyspark.sql.streaming.listener"
+    },
+    {
+      "name": "onQueryStarted",
+      "module": "pyspark.sql.streaming.listener"
+    },
+    {
+      "name": "onQueryTerminated",
+      "module": "pyspark.sql.streaming.listener"
+    },
+    {
+      "name": "option",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "option",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "options",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "options",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "orc",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "orc",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "orderBy",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "orderBy",
+      "module": "pyspark.sql.window"
+    },
+    {
+      "name": "otherwise",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "outputMode",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "over",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "overlay",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "overwrite",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "overwritePartitions",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "pack_long",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "pandas_api",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "pandas_udf",
+      "module": "pyspark.sql.pandas.functions"
+    },
+    {
+      "name": "parallelize",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "parametrized_type_hint_getinitargs",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "parquet",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "parquet",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "parse_url",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "partitionBy",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "partitionBy",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "partitionBy",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "partitionBy",
+      "module": "pyspark.sql.window"
+    },
+    {
+      "name": "partitionId",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "partitionedBy",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "percent_rank",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "percentile",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "percentile_approx",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "persist",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "persist",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "pi",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "pickleFile",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "pipe",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "pivot",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "pmod",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "portable_hash",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "posexplode",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "posexplode_outer",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "position",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "positive",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "pow",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "power",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "printSchema",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "print_exec",
+      "module": "pyspark.util"
+    },
+    {
+      "name": "printf",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "processAllAvailable",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "product",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "profile",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "pyarrow_version_less_than_minimum",
+      "module": "pyspark.sql.pandas.utils"
+    },
+    {
+      "name": "pysparkMemory",
+      "module": "pyspark.resource.requests"
+    },
+    {
+      "name": "pyspark_column_op",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "python_cogroup",
+      "module": "pyspark.join"
+    },
+    {
+      "name": "python_full_outer_join",
+      "module": "pyspark.join"
+    },
+    {
+      "name": "python_join",
+      "module": "pyspark.join"
+    },
+    {
+      "name": "python_left_outer_join",
+      "module": "pyspark.join"
+    },
+    {
+      "name": "python_right_outer_join",
+      "module": "pyspark.join"
+    },
+    {
+      "name": "quarter",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "queryName",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "radians",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "raise_error",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "rand",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "randn",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "randomSplit",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "randomSplit",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "range",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "range",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "range",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "rangeBetween",
+      "module": "pyspark.sql.window"
+    },
+    {
+      "name": "rank",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "read_bool",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "read_int",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "read_long",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "recoverPartitions",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "reduce",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "reduce",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "reduceByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "reduceByKeyLocally",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "reducer_override",
+      "module": "pyspark.cloudpickle.cloudpickle_fast"
+    },
+    {
+      "name": "reflect",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "refreshByPath",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "refreshTable",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "refreshTable",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "regexp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regexp_count",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regexp_extract",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regexp_extract_all",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regexp_instr",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regexp_like",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regexp_replace",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regexp_substr",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "register",
+      "module": "pyspark.sql.udf"
+    },
+    {
+      "name": "register",
+      "module": "pyspark.sql.udtf"
+    },
+    {
+      "name": "registerDataFrameAsTable",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "registerFunction",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "registerFunction",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "registerJavaFunction",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "registerJavaFunction",
+      "module": "pyspark.sql.udf"
+    },
+    {
+      "name": "registerJavaUDAF",
+      "module": "pyspark.sql.udf"
+    },
+    {
+      "name": "registerTempTable",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "register_pickle_by_value",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "regr_avgx",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_avgy",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_count",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_intercept",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_r2",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_slope",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_sxx",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_sxy",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "regr_syy",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "remote",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "remove",
+      "module": "pyspark.sql.streaming.state"
+    },
+    {
+      "name": "removeJobTag",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "removeListener",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "removeTag",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "repartition",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "repartition",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "repartitionAndSortWithinPartitions",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "repartitionByRange",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "repeat",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "replace",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "replace",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "replace",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "require",
+      "module": "pyspark.resource.profile"
+    },
+    {
+      "name": "require_minimum_pandas_version",
+      "module": "pyspark.sql.pandas.utils"
+    },
+    {
+      "name": "require_minimum_pyarrow_version",
+      "module": "pyspark.sql.pandas.utils"
+    },
+    {
+      "name": "require_test_compiled",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "resetTerminated",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "resource",
+      "module": "pyspark.resource.requests"
+    },
+    {
+      "name": "resources",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "reverse",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "right",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "rightOuterJoin",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "rint",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "rlike",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "rlike",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "rollup",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "round",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "row_number",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "rowsBetween",
+      "module": "pyspark.sql.window"
+    },
+    {
+      "name": "rpad",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "rtrim",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "runJob",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "sameSemantics",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "sample",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sample",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "sampleBy",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "sampleByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sampleStdev",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sampleStdev",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "sampleVariance",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sampleVariance",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "save",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "saveAsHadoopDataset",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "saveAsHadoopFile",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "saveAsNewAPIHadoopDataset",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "saveAsNewAPIHadoopFile",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "saveAsPickleFile",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "saveAsSequenceFile",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "saveAsTable",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "saveAsTextFile",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "scalaUDT",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "schema",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "schema",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "schema_of_csv",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "schema_of_json",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sec",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "second",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "select",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "selectExpr",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "semanticHash",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "sentences",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sequence",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sequenceFile",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "serialize",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "session_window",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "set",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "set",
+      "module": "pyspark.sql.conf"
+    },
+    {
+      "name": "setAll",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "setAppName",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "setCheckpointDir",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "setConf",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "setCurrentCatalog",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "setCurrentDatabase",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "setExecutorEnv",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "setIfMissing",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "setInterruptOnCancel",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "setJobDescription",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "setJobGroup",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "setLocalProperty",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "setLogLevel",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "setMaster",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "setName",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "setSparkHome",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "setSystemProperty",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "setTimeoutDuration",
+      "module": "pyspark.sql.streaming.state"
+    },
+    {
+      "name": "setTimeoutTimestamp",
+      "module": "pyspark.sql.streaming.state"
+    },
+    {
+      "name": "sha",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sha1",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sha2",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "shiftLeft",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "shiftRight",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "shiftRightUnsigned",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "shiftleft",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "shiftright",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "shiftrightunsigned",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "show",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "show",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "show_profiles",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "show_profiles",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "shuffle",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "shutdown",
+      "module": "pyspark.accumulators"
+    },
+    {
+      "name": "sign",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "signum",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "simpleString",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "sin",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "since",
+      "module": "pyspark"
+    },
+    {
+      "name": "sinh",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "size",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "skewness",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "slice",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "some",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sort",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "sortBy",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sortBy",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "sortByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sortWithinPartitions",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "sort_array",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sorted",
+      "module": "pyspark.shuffle"
+    },
+    {
+      "name": "soundex",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sparkUser",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "spark_partition_id",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "split",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "split_part",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sql",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "sql",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "sqlType",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "sqrt",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "stack",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "stageId",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "start",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "start",
+      "module": "pyspark.util"
+    },
+    {
+      "name": "startswith",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "startswith",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "stats",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "stats",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "statusTracker",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "std",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "stddev",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "stddev_pop",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "stddev_samp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "stdev",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "stdev",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "stop",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "stop",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "stop",
+      "module": "pyspark.sql.streaming.query"
+    },
+    {
+      "name": "str_to_map",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "struct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "subimport",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "substr",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "substr",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "substring",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "substring_index",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "subtract",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "subtract",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "subtractByKey",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sum",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sum",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sum",
+      "module": "pyspark.sql.group"
+    },
+    {
+      "name": "sum",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "sumApprox",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "sumDistinct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "sum_distinct",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "summary",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "table",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "table",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "table",
+      "module": "pyspark.sql.session"
+    },
+    {
+      "name": "table",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "tableExists",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "tableNames",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "tableProperty",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "tables",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "tail",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "take",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "take",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "takeOrdered",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "takeSample",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "tan",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "tanh",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "taskAttemptId",
+      "module": "pyspark.taskcontext"
+    },
+    {
+      "name": "text",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "text",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "textFile",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "timestamp_micros",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "timestamp_millis",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "timestamp_seconds",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "toDF",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "toDF",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "toDebugString",
+      "module": "pyspark.conf"
+    },
+    {
+      "name": "toDebugString",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "toDegrees",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "toInternal",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "toJArray",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "toJSON",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "toLocalIterator",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "toLocalIterator",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "toPandas",
+      "module": "pyspark.sql.pandas.conversion"
+    },
+    {
+      "name": "toRadians",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "toTable",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "to_arrow_schema",
+      "module": "pyspark.sql.pandas.types"
+    },
+    {
+      "name": "to_arrow_type",
+      "module": "pyspark.sql.pandas.types"
+    },
+    {
+      "name": "to_binary",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_char",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_csv",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_date",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_json",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_koalas",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "to_number",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_pandas_on_spark",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "to_str",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "to_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_timestamp_ltz",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_timestamp_ntz",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_unix_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_utc_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "to_varchar",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "top",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "transform",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "transform",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "transform_keys",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "transform_values",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "translate",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "treeAggregate",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "treeReduce",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "trigger",
+      "module": "pyspark.sql.streaming.readwriter"
+    },
+    {
+      "name": "trim",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "trunc",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_add",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_aes_decrypt",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_avg",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_divide",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_element_at",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_multiply",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_remote_avro_functions",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "try_remote_functions",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "try_remote_observation",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "try_remote_protobuf_functions",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "try_remote_session_classmethod",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "try_remote_window",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "try_remote_windowspec",
+      "module": "pyspark.sql.utils"
+    },
+    {
+      "name": "try_simplify_traceback",
+      "module": "pyspark.util"
+    },
+    {
+      "name": "try_subtract",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_sum",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_to_binary",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_to_number",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "try_to_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "typeName",
+      "module": "pyspark.sql.types"
+    },
+    {
+      "name": "typeof",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "ucase",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "udf",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "udtf",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "unbase64",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "uncacheTable",
+      "module": "pyspark.sql.catalog"
+    },
+    {
+      "name": "uncacheTable",
+      "module": "pyspark.sql.context"
+    },
+    {
+      "name": "unhex",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "union",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "union",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "union",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "unionAll",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "unionByName",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "unix_date",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "unix_micros",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "unix_millis",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "unix_seconds",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "unix_timestamp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "unpersist",
+      "module": "pyspark.broadcast"
+    },
+    {
+      "name": "unpersist",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "unpersist",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "unpivot",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "unregister_pickle_by_value",
+      "module": "pyspark.cloudpickle.cloudpickle"
+    },
+    {
+      "name": "unset",
+      "module": "pyspark.sql.conf"
+    },
+    {
+      "name": "unwrap_spark_exception",
+      "module": "pyspark.errors.exceptions.captured"
+    },
+    {
+      "name": "unwrap_udt",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "update",
+      "module": "pyspark.sql.streaming.state"
+    },
+    {
+      "name": "upper",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "url_decode",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "url_encode",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "user",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "using",
+      "module": "pyspark.sql.readwriter"
+    },
+    {
+      "name": "values",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "var_pop",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "var_samp",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "variance",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "variance",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "variance",
+      "module": "pyspark.statcounter"
+    },
+    {
+      "name": "version",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "walk_tb",
+      "module": "pyspark.util"
+    },
+    {
+      "name": "weekday",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "weekofyear",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "when",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "when",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "where",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "wholeTextFiles",
+      "module": "pyspark.context"
+    },
+    {
+      "name": "width_bucket",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "window",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "window_time",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "withColumn",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "withColumnRenamed",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "withColumns",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "withColumnsRenamed",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "withField",
+      "module": "pyspark.sql.column"
+    },
+    {
+      "name": "withMetadata",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "withResources",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "withWatermark",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "write",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "writeTo",
+      "module": "pyspark.sql.dataframe"
+    },
+    {
+      "name": "write_int",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "write_long",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "write_with_length",
+      "module": "pyspark.serializers"
+    },
+    {
+      "name": "xpath",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_boolean",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_double",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_float",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_int",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_long",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_number",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_short",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xpath_string",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "xxhash64",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "year",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "years",
+      "module": "pyspark.sql.functions"
+    },
+    {
+      "name": "zero",
+      "module": "pyspark.accumulators"
+    },
+    {
+      "name": "zero",
+      "module": "pyspark.profiler"
+    },
+    {
+      "name": "zip",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "zipWithIndex",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "zipWithUniqueId",
+      "module": "pyspark.rdd"
+    },
+    {
+      "name": "zip_with",
+      "module": "pyspark.sql.functions"
+    }
   ]
 }

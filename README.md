@@ -15,17 +15,21 @@ pip3 install -r requirements.txt
 ```bash
 # analyze your PySpark code for api functions usage
 # -d: project directory to analyze
-# -f: PySpark functions file (.json or .txt) already generated or can be generated using the optional script below
+# -f: PySpark functions file must be a .json file (already generated or can be generated using the optional script below)
 # -o: output directory (default: pyspark_api_usage)
 python3 find_pyspark_api_usage.py \
     -d /path/to/pyspark/code/project \
     -f pyspark_api_metadata/pyspark_functions_latest.json \
     -o pyspark_api_usage
+
+# actual example
+python3 find_pyspark_api_usage.py -d /path/to/code/ -f pyspark_api_metadata/pyspark_functions_latest.json
 ```
 
 ```bash
 # OPTIONAL: if you don't have the latest PySpark api functions metadata
 # this will generate a .json and text file with all the functions
+# you can use the .json file for running the find_pyspark_api_usage.py script
 # this is not required if you already have the latest functions list in the pyspark_api_metadata directory
 python3 generate_pyspark_api_functions.py
 ```
