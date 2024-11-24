@@ -274,5 +274,10 @@ def main():
     analyze_directory(args.directory, pyspark_functions, args.output_dir, args.workers)
     logging.info(f"Analysis complete. Results saved to {args.output_dir}")
 
+    print("\nDeclareData PySpark analysis complete! ✨")
+    print(f"\nResults saved to: {args.output_dir}/pyspark_usage_report.json")
+    print("\nPlease review and send us this file to help ensure we support your PySpark usage patterns.")
+    print("Note: The report has been automatically redacted to protect your code privacy.")
+
 if __name__ == "__main__":
     main()
