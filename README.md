@@ -1,6 +1,6 @@
 # PySpark API Usage Analyzer
 
-Analyzes PySpark API usage in projects to identify which PySpark functions and methods are being actively used across your Spark codebase. The DeclareData Fuse team uses this tool to understand the PySpark functions used in our codebase and identify the most commonly used functions.
+Analyzes PySpark API usage in projects to identify which PySpark functions and methods are being actively used across your Spark codebase. The DeclareData Fuse team uses this tool to understand the PySpark functions used in our codebase and common usage patterns.
 
 Note: Results are specific to your project and are gitignored. They are not to be committed to the repository and should be sent to the DeclareData Fuse team for review.
 
@@ -59,6 +59,8 @@ The tool generates two files in your specified output directory:
 
 1. `pyspark_usage_report.json`: Detailed analysis with function locations
 ```json
+# example output snippet
+
     {
       "function": "sum",
       "module": "pyspark.sql.functions",
@@ -85,6 +87,8 @@ The tool generates two files in your specified output directory:
 
 2. `pyspark_usage_summary.txt`: Simple summary of usage
 ```text
+# example output snippet
+
 Total files analyzed: 8
 Total PySpark function matches: 43
 
