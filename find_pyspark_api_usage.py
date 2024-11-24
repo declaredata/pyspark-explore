@@ -8,10 +8,18 @@ from dataclasses import dataclass
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+__version__ = "0.1.0"
+
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler("pyspark_analyzer.log")
+    ]
 )
+
+logging.info(f"PySpark API Usage Analyzer v{__version__}")
 
 @dataclass
 class FunctionMatch:
@@ -272,7 +280,7 @@ def main():
 
     pyspark_functions = load_pyspark_functions(args.functions_file)
     analyze_directory(args.directory, pyspark_functions, args.output_dir, args.workers)
-    logging.info(f"Analysis complete. Results saved to {args.output_dir}")
+    logging.info(f"Analysis complete. Results saved to {args.output_dir} directory.")
 
     print("\nDeclareData PySpark analysis complete! ✨")
     print(f"\nResults saved to: {args.output_dir}/pyspark_usage_report.json")
