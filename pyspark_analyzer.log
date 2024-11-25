@@ -1,6 +1,0 @@
-2024-11-23 20:56:19,984 [INFO] PySpark API Usage Analyzer v0.1.0
-2024-11-23 20:56:19,992 [INFO] Found 12 Python files to analyze
-2024-11-23 20:56:19,996 [INFO] Analysis complete. Results saved to pyspark_api_usage
-2024-11-23 20:57:10,253 [INFO] PySpark API Usage Analyzer v0.1.0
-2024-11-23 20:57:10,258 [INFO] Found 12 Python files to analyze
-2024-11-23 20:57:10,263 [INFO] Analysis complete. Results saved to pyspark_api_usage directory.

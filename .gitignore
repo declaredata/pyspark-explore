@@ -4,5 +4,6 @@ __pycache__/
 
 pyspark_api_metadata/
 pyspark_api_usage/
+*.log
 
 venv/

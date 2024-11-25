@@ -15,7 +15,7 @@ pip3 install -r requirements.txt
 
 Analyze your PySpark code for PySpark API usage patterns and generate report:
 ```bash
-# analyze your PySpark code for api functions usage
+# Primary script for analyzing your PySpark code for api functions usage
 # -d: project directory to analyze
 # -f: PySpark functions file must be a .json file (already generated or can be generated using the optional script below)
 # -o: output directory (default: pyspark_api_usage)
@@ -31,7 +31,7 @@ python3 find_pyspark_api_usage.py -d /path/to/code/ -f pyspark_api_metadata/pysp
 
 ## Optional: Generate PySpark API Functions Metadata
 ```bash
-# OPTIONAL: if you don't have the latest PySpark api functions metadata
+# OPTIONAL: Only needed if you don't have the latest PySpark api functions metadata or want to update it.
 # this will generate a .json and text file with all the functions
 # you can use the .json file for running the find_pyspark_api_usage.py script
 # this is not required if you already have the latest functions list in the pyspark_api_metadata directory
@@ -53,7 +53,7 @@ python3 find_pyspark_api_usage.py -h
 ```
 
 ## Output and Summary Files
-The two output files should be sent to the DeclareData Fuse team for review.
+The two output files should be sent to the DeclareData Fuse team after you have reviewed them.
 
 The tool generates two files in your specified output directory:
 
@@ -102,9 +102,10 @@ pyspark.sql.dataframe.orderBy: 2 occurrences
 pyspark.sql.dataframe.sort: 1 occurrences
 ```
 
-## Privacy and Security
+## Privacy, Security & Logging
 
 - The generated report only includes function names and basic usage patterns
 - All code content is automatically redacted
 - Test files and virtual environments are automatically excluded
 - You can review the redacted report before sending it to the DeclareData Fuse team
+- The tool logs to `pyspark_analyzer.log` for debugging purposes, this file is gitignored
