@@ -8,8 +8,8 @@ _Note: Results are specific to your project and are gitignored. They are not to 
 
 Install the required packages and clone the repository:
 ```bash
-git clone https://github.com/declaredata/pyspark-explore.git
-cd pyspark-explore
+git clone https://github.com/declaredata/pyspark_explore.git
+cd pyspark_explore
 pip3 install -r requirements.txt
 ```
 
